@@ -39,21 +39,28 @@ jobs:
           chmod +x clash
 
       - name: Start Clash
+        run: nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
+
+      - name: Test direct connection to proxy server
         run: |
-          nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
-          # 等几秒让 Clash 启动完成
-          sleep 5
+          echo "========= Testing direct connection to your airport node ========="
+          curl -v pjfxxed.us01-ae5.entry.v50721.dev:20013 || echo "Cannot connect to this node"
 
       - name: Test Clash running status
         run: |
           echo "========= Checking Clash process ========="
           ps -ef | grep clash
 
+      - name: Test port
+        run: |
           echo "========= Testing port 7890 ========="
-          nc -zv 127.0.0.1 7890 || echo "Port 7890 NOT open"
+          nc -zv 127.0.0.1 7890
 
+      - name: Test http proxy
+        run: |
           echo "========= Testing http proxy request ========="
           curl -I --proxy http://127.0.0.1:7890 https://www.google.com || echo "Proxy failed"
+
 
       # ======================
       # 1. Python 环境（爬虫）
