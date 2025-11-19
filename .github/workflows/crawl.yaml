@@ -118,7 +118,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: vitepress-project/.vitepress/dist
+          path: vitepress-project/docs/.vitepress/dist
 
   deploy:
     needs: update
