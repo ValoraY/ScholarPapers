@@ -1,0 +1,107 @@
+name: Update Scholar Papers
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"        # 每周一 02:00 UTC 自动运行
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ======================
+      # 1. Python 环境（爬虫）
+      # ======================
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install scholarly requests beautifulsoup4 httpx[socks]
+
+      # -------------------------------
+      # 生成 config_override.json（可选）
+      # -------------------------------
+      - name: Generate override config (GitHub Variables)
+        run: |
+          echo "{
+            \"year_start\": ${{ vars.YEAR_START }},
+            \"authors\": ${{ toJson(vars.SCHOLAR_AUTHORS) }},
+            \"incremental_limit\": ${{ vars.INCREMENTAL_LIMIT }}
+          }" > config_override.json
+
+          echo "Generated config_override.json:"
+          cat config_override.json
+
+      # -------------------------------
+      # 执行爬虫脚本
+      # -------------------------------
+      - name: Run fetch script (verbose)
+        run: |
+          echo "===== RUNNING fetch_papers.py ====="
+          python -u scripts/fetch_papers.py 2>&1 | tee fetch_output.log
+          echo "===== END OF PYTHON OUTPUT ====="
+
+      - name: Show fetch log
+        run: |
+          echo "----- BEGIN fetch_output.log -----"
+          cat fetch_output.log
+          echo "----- END fetch_output.log -----"
+
+      # -------------------------------
+      # 提交更新的数据（Markdown ≠ MkDocs，只提交变化）
+      # -------------------------------
+      - name: Commit and push updates
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/ vitepress-project/docs/authors/*.md config_override.json
+          git commit -m "Auto update papers" || echo "No updates to commit"
+          git push
+
+      # ======================
+      # 2. Node 环境（VitePress）
+      # ======================
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install VitePress dependencies
+        working-directory: vitepress-project
+        run: npm install
+
+      - name: Build VitePress site
+        working-directory: vitepress-project
+        run: npm run build
+
+      # -------------------------------
+      # 上传构建产物给 deploy-pages
+      # -------------------------------
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: vitepress-project/.vitepress/dist
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,206 @@
+/* =============================
+      全局布局（亮/暗通用）
+============================= */
+
+/* 扩大正文宽度 */
+.VPContent .content {
+  max-width: 1100px !important;
+  width: 100% !important;
+}
+
+/* 扩大 content-container 区域 */
+.content-container {
+  max-width: 1400px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* 移除右侧空白限制 */
+.VPContent {
+  max-width: none !important;
+}
+
+/* 禁用右侧 aside 栏 */
+.aside {
+  display: none !important;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+
+/* =============================
+           亮色模式
+============================= */
+/* ==========================
+   年份外层大框（保持不变）
+   ========================== */
+details.year-block {
+  border: 2px solid #dbeafe;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* 年份标题 */
+details.year-block summary.year-summary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==========================
+   每篇论文独立小卡片
+   ========================== */
+.paper-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem 1.4rem;
+
+  /* 关键：与其他论文分开 */
+  margin: 1.2rem 0;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.paper-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  transform: translateY(-2px);
+}
+
+/* 论文标题 */
+.paper-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+/* 元信息 */
+.paper-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.6rem;
+}
+
+/* 链接 */
+.paper-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.paper-link:hover {
+  text-decoration: underline;
+}
+
+/* 摘要两端对齐 */
+.paper-abstract {
+  margin-top: 0.8rem;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #374151;
+  line-height: 1.65;
+}
+
+
+
+/* =============================
+           暗色模式
+============================= */
+
+.dark {
+  --bg-layer-1: #000000;      
+  --bg-layer-2: #555252;      
+  --border-color: #9b8e8e;
+  --text-primary: #ffffff;
+  --text-secondary: #bdbdbd;
+  --accent-blue: #80c8ff;
+  --accent-purple: #c7a4ff;
+  --accent-green: #9dd39e;
+}
+
+/* 年份大卡背景（暗色） */
+.dark details.year-block {
+  background: var(--bg-layer-1) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+.dark details.year-block:hover {
+  border-color: #d3d3d3 !important;
+}
+
+/* summary 年份标题色 */
+.dark .year-summary {
+  color: var(--accent-blue) !important;
+}
+
+/* Paper 卡片 */
+.dark .paper-card {
+  background: var(--bg-layer-2);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.4rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  color: var(--text-primary);
+}
+
+/* 标题 */
+.dark .paper-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+/* 年份信息 */
+.dark .paper-meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.6rem;
+}
+
+/* 链接 */
+.dark .paper-link {
+  color: var(--accent-blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dark .paper-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* 摘要 */
+.dark .paper-abstract {
+  color: var(--text-primary);
+}
+
+
+/* 作者名字缩进一些（不影响其它导航） */
+.VPSidebar .group .items a.VPLink {
+  padding-left: 16px !important;  /* 默认 0px 左右，16px 是推荐缩进 */
+}
+
+.year-summary .icon {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+details.year-block[open] .year-summary .icon {
+  transform: rotate(90deg);
+}
+
