@@ -33,9 +33,9 @@ jobs:
       # ======================
       - name: Install Clash
         run: |
-          wget https://github.com/Dreamacro/clash/releases/download/v1.18.0/clash-linux-amd64-v1.18.0.gz
-          gunzip clash-linux-amd64-v1.18.0.gz
-          mv clash-linux-amd64-v1.18.0 clash
+          wget https://github.com/DustinWin/proxy-tools/releases/download/Clash-Premium/clashpremium-release-linux-amd64.tar.gz          
+          tar -xvzf clashpremium-release-linux-amd64.tar.gz
+          mv CrashCore clash
           chmod +x clash
 
       - name: Start Clash
