@@ -18,6 +18,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+
+      # ======================
+      # 0. 写入 Clash 配置（来自 Secret）
+      # ======================
+      - name: Write Clash config from secret
+        run: |
+          cat << 'EOF' > clash_config.yaml
+          ${{ secrets.CLASH_CONFIG }}
+          EOF
+
+      # ======================
+      # 0. 安装 & 启动 Clash
+      # ======================
+      - name: Install Clash
+        run: |
+          wget https://github.com/Dreamacro/clash/releases/download/v1.18.0/clash-linux-amd64-v1.18.0.gz
+          gunzip clash-linux-amd64-v1.18.0.gz
+          mv clash-linux-amd64-v1.18.0 clash
+          chmod +x clash
+
+      - name: Start Clash
+        run: |
+          nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
+          # 等几秒让 Clash 启动完成
+          sleep 5
+
       # ======================
       # 1. Python 环境（爬虫）
       # ======================
