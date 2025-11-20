@@ -41,25 +41,30 @@ jobs:
       - name: Start Clash
         run: nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
 
-      - name: Test direct connection to proxy server
+      - name: Check Clash process
         run: |
-          echo "========= Testing direct connection to your airport node ========="
-          curl -v pjfxxed.us01-ae5.entry.v50721.dev:20013 || echo "Cannot connect to this node"
+          pgrep -laf clash || (echo "Clash NOT running"; exit 1)
 
-      - name: Test Clash running status
+      - name: Check Clash port listening
         run: |
-          echo "========= Checking Clash process ========="
-          ps -ef | grep clash
+          ss -tlnp | grep 7890 || (echo "Port 7890 NOT listening"; exit 1)
 
-      - name: Test port
+      - name: Test node TCP reachability
         run: |
-          echo "========= Testing port 7890 ========="
-          nc -zv 127.0.0.1 7890
+          nc -z -w 3 your.node.com 12345 && echo "Node OK" || echo "Node FAILED"
 
-      - name: Test http proxy
+      - name: Test proxy (lightweight)
         run: |
-          echo "========= Testing http proxy request ========="
-          curl -I --proxy http://127.0.0.1:7890 https://www.google.com || echo "Proxy failed"
+          curl --proxy http://127.0.0.1:7890 --max-time 5 http://www.gstatic.com/generate_204 \
+            && echo "Proxy OK" \
+            || (echo "Proxy FAILED"; exit 1)
+
+      - name: Test proxy HTTPS
+        run: |
+          curl -I --proxy http://127.0.0.1:7890 --max-time 5 https://www.google.com \
+            && echo "HTTPS OK" \
+            || echo "HTTPS FAILED"
+
 
 
       # ======================
