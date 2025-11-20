@@ -57,13 +57,13 @@ jobs:
           echo "HTTP_PROXY=http://127.0.0.1:7890" >> $GITHUB_ENV
           echo "HTTPS_PROXY=http://127.0.0.1:7890" >> $GITHUB_ENV
           echo "ALL_PROXY=socks5://127.0.0.1:7890" >> $GITHUB_ENV
-      
+
       - name: Test Python via proxy
         run: |
-          python3 - << 'EOF'
-      import requests
-      print(requests.get("https://www.google.com", timeout=5).status_code)
-      EOF
+          python3 << 'EOF'
+import requests
+print("Google Status:", requests.get("https://www.google.com", timeout=5).status_code)
+EOF
 
       - name: Show Clash startup log
         run: |
