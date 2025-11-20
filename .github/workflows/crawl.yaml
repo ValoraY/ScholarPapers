@@ -36,6 +36,12 @@ jobs:
           wget https://github.com/DustinWin/proxy-tools/releases/download/Clash-Premium/clashpremium-release-linux-amd64.tar.gz          
           tar -xvzf clashpremium-release-linux-amd64.tar.gz
           mv CrashCore clash
+        
+      - name: Prepare Country.mmdb
+        run: |
+          mkdir -p ~/.config/clash
+          cp Country.mmdb ~/.config/clash/Country.mmdb
+          echo "MMDB installed at ~/.config/clash/"
 
       - name: Ensure clash is executable
         run: |
