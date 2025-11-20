@@ -61,9 +61,9 @@ jobs:
       - name: Test Python via proxy
         run: |
           python3 << 'EOF'
-import requests
-print("Google Status:", requests.get("https://www.google.com", timeout=5).status_code)
-EOF
+          import requests
+          print("Google Status:", requests.get("https://www.google.com", timeout=5).status_code)
+          EOF
 
       - name: Show Clash startup log
         run: |
