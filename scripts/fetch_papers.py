@@ -58,7 +58,7 @@ ALL_MD_DIR = "vitepress-project/docs/authors"
 ALL_MD_FILE = "vitepress-project/docs/authors/index.md"
 
     
-MAX_PAPERS_PER_AUTHOR = 200      # Hardcoded default
+MAX_PAPERS_PER_AUTHOR = 150      # Hardcoded default
 ENABLE_INCREMENTAL_MODE = True   # Hardcoded default
 ENABLE_TRUNCATED_CHECK = True    # Hardcoded default
 USE_ARXIV = True                 # Hardcoded default
@@ -126,7 +126,8 @@ def retry(max_attempts=5, initial_wait=3, backoff=2):
 
 @retry(max_attempts=5, initial_wait=3)
 def safe_search_author(author_id):
-    return scholarly.search_author_id(author_id)
+    # return scholarly.search_author_id(author_id)
+    return scholarly.search_author_id(author_id, sortby="year")
 
 @retry(max_attempts=5, initial_wait=3)
 def safe_fill(*args, **kwargs):
@@ -175,7 +176,8 @@ def fetch_author_papers(author_id, author_name):
 
     author = scholarly.search_author_id(author_id)
     # safe fill with retry
-    author = safe_fill(author, sections=["publications"])
+    # author = safe_fill(author, sections=["publications"])
+    author = safe_fill(author, sections=["publications"], sortby="year")
 
     papers = author["publications"]
     total = len(papers)
@@ -192,7 +194,7 @@ def fetch_author_papers(author_id, author_name):
     new_results = []
 
     for idx, pub in enumerate(papers, 1):
-        info(f" ({idx}/{len(papers)}) loading paper details...")
+        info(f" ({idx}/{len(papers)}) Loading paper metadata ...")
 
         try:
             # safe search with retry
@@ -208,10 +210,11 @@ def fetch_author_papers(author_id, author_name):
                 continue
 
             if not (YEAR_START <= year <= YEAR_END):
+                info(f"   Skipped (year {year} outside range {YEAR_START}-{YEAR_END})")
                 continue
 
             title = bib.get("title", "Unknown Title")
-            info(f" → {title}")
+            info(f" → {title} ({year})")
 
             short_abs = bib.get("abstract", "")
             link = pub_filled.get("pub_url", "")
@@ -223,7 +226,7 @@ def fetch_author_papers(author_id, author_name):
                 warn(f"⚠ No link for: {title}")
 
             if not is_first and title in existing_titles:
-                info("   Already exists. Skipped.")
+                info("   Already exists in local cache. Skipped.")
                 continue
 
             abstract = fetch_full_abstract(link, short_abs)
@@ -254,6 +257,8 @@ def fetch_author_papers(author_id, author_name):
     success(f"Added {len(new_results)} new papers. Total stored: {len(final)}")
 
     return final
+
+
 
 # ================================================================
 # Markdown
