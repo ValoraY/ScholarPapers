@@ -67,7 +67,7 @@ jobs:
 
       - name: Test node TCP reachability
         run: |
-          nc -z -w 3 your.node.com 12345 && echo "Node OK" || echo "Node FAILED"
+          nc -z -w 3 0x6e5ed.hk01-ae5.entry.v50721.dev 19275 && echo "Node OK" || echo "Node FAILED"
 
       - name: Test proxy (lightweight)
         run: |
