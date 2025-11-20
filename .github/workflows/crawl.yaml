@@ -36,10 +36,20 @@ jobs:
           wget https://github.com/DustinWin/proxy-tools/releases/download/Clash-Premium/clashpremium-release-linux-amd64.tar.gz          
           tar -xvzf clashpremium-release-linux-amd64.tar.gz
           mv CrashCore clash
-          chmod +x clash
+
+      - name: Ensure clash is executable
+        run: |
+          chmod +x ./clash
+          ls -l ./clash
 
       - name: Start Clash
-        run: nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
+        run: |
+          nohup ./clash -f clash_config.yaml > clash.log 2>&1 &
+
+      - name: Show Clash startup log
+        run: |
+          echo "========= Clash log ========="
+          cat clash.log
 
       - name: Check Clash process
         run: |
