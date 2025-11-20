@@ -19,6 +19,7 @@ export default defineConfig(async () => {
   }
 
   return {
+    base: '/ScholarPapers/',
     title: "Scholar Papers",
     description: "自动化学术论文收集网站",
 
