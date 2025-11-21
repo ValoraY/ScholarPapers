@@ -8,6 +8,7 @@ import os
 from datetime import datetime
 import time
 import random
+import textwrap
 
 # -----------------------------------
 # Logging Helpers
@@ -242,18 +243,25 @@ def fetch_author_papers(author_id, author_name):
             warn("Failed to load paper:")
             warn(traceback.format_exc())
             continue
+    
 
-    merged = state + new_results
+    # 旧数据一定优先
+    merged_dict = {}
 
-    # Deduplicate
-    seen = set()
-    final = []
-    for p in merged:
-        if p["title"] not in seen:
-            final.append(p)
-            seen.add(p["title"])
+    # 先写入旧数据（最完整）
+    for p in state:
+        merged_dict[p["title"]] = p
+
+    # 再写入新数据（只有旧数据没有的才会加进去）
+    for p in new_results:
+        if p["title"] not in merged_dict:
+            merged_dict[p["title"]] = p
+
+    # 转回列表
+    final = list(merged_dict.values())
 
     save_state(author_id, author_name, final)
+
     success(f"Added {len(new_results)} new papers. Total stored: {len(final)}")
 
     return final
@@ -264,6 +272,7 @@ def fetch_author_papers(author_id, author_name):
 # Markdown
 # ================================================================
 def generate_md(author_name, papers):
+    # 按年份降序
     papers.sort(key=lambda p: p["year"], reverse=True)
 
     grouped = {}
@@ -273,33 +282,39 @@ def generate_md(author_name, papers):
     md = f"## 📑 {author_name} Papers\n\n论文按年份分组（点击年份或空白区域可展开/折叠该年份的论文）\n\n"
 
     for year, group in grouped.items():
-        md += f"""
-<details class="year-block" open>
-<summary class="year-summary"><span class="icon">📅</span>{year}</summary>
-"""
+        md += textwrap.dedent(f"""
+        <details class="year-block" open>
+        <summary class="year-summary"><span class="icon">📅</span>{year}</summary>
+        """)
 
         for p in group:
-            abs_clean = p["abstract"].replace("\n", " ").strip()
+            # 1. 清理换行
+            abs_clean = " ".join(p["abstract"].split())
+            # 2. 对摘要做 HTML 转义，防止出现裸的 <、>、&
+            abs_clean = html.escape(abs_clean)
 
-            md += f"""
-<div class="paper-card">
+            title_clean = html.escape(p["title"])
 
-<h3 class="paper-title">{p['title']}</h3>
+            md += textwrap.dedent(f"""
+            <div class="paper-card">
 
-<div class="paper-meta">📄 {p['year']}</div>
+            <h3 class="paper-title">{title_clean}</h3>
 
-<a class="paper-link" href="{p['link']}" target="_blank">🔗 Read Paper</a>
+            <div class="paper-meta">📄 {p['year']}</div>
 
-<p class="paper-abstract">
-{abs_clean}
-</p>
+            <a class="paper-link" href="{p['link']}" target="_blank">🔗 Read Paper</a>
 
-</div>
-"""
+            <p class="paper-abstract">
+            {abs_clean}
+            </p>
+
+            </div>
+            """)
 
         md += "</details>\n\n"
 
     return md
+
 
 
 # ================================================================

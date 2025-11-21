@@ -1,0 +1,1475 @@
+## 📑 Zhaofei Yu Papers
+
+论文按年份分组（点击年份或空白区域可展开/折叠该年份的论文）
+
+
+<details class="year-block" open>
+<summary class="year-summary"><span class="icon">📅</span>2025</summary>
+
+<div class="paper-card">
+
+<h3 class="paper-title">HAD: Hierarchical Asymmetric Distillation to Bridge Spatio-Temporal Gaps in Event-Based Object Tracking</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2510.19560" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+RGB cameras excel at capturing rich texture details with high spatial resolution, whereas event cameras offer exceptional temporal resolution and a high dynamic range (HDR). Leveraging their complementary strengths can substantially enhance object tracking under challenging conditions, such as high-speed motion, HDR environments, and dynamic background interference. However, a significant spatio-temporal asymmetry exists between these two modalities due to their fundamentally different imaging mechanisms, hindering effective multi-modal integration. To address this issue, we propose {Hierarchical Asymmetric Distillation} (HAD), a multi-modal knowledge distillation framework that explicitly models and mitigates spatio-temporal asymmetries. Specifically, HAD proposes a hierarchical alignment strategy that minimizes information loss while maintaining the student network&#x27;s computational efficiency and parameter compactness. Extensive experiments demonstrate that HAD consistently outperforms state-of-the-art methods, and comprehensive ablation studies further validate the effectiveness and necessity of each designed component. The code will be released soon.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeGrasp: A Benchmark for 6-DoF Grasp Pose Detection from Stereo Spike Streams</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2510.10602" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Most robotic grasping systems rely on converting sensor data into explicit 3D point clouds, which is a computational step not found in biological intelligence. This paper explores a fundamentally different, neuro-inspired paradigm for 6-DoF grasp detection. We introduce SpikeGrasp, a framework that mimics the biological visuomotor pathway, processing raw, asynchronous events from stereo spike cameras, similarly to retinas, to directly infer grasp poses. Our model fuses these stereo spike streams and uses a recurrent spiking neural network, analogous to high-level visual processing, to iteratively refine grasp hypotheses without ever reconstructing a point cloud. To validate this approach, we built a large-scale synthetic benchmark dataset. Experiments show that SpikeGrasp surpasses traditional point-cloud-based baselines, especially in cluttered and textureless scenes, and demonstrates remarkable data efficiency. By establishing the viability of this end-to-end, neuro-inspired approach, SpikeGrasp paves the way for future systems capable of the fluid and efficient manipulation seen in nature, particularly for dynamic objects.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Corrigendum to “Implementing feature binding through dendritic networks of a single neuron”[Neural Networks (2025) 107555]</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S089360802500560X" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Abstract unavailable. This publication does not provide a summary using scholarly.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">PredNext: Explicit Cross-View Temporal Prediction for Unsupervised Learning in Spiking Neural Networks</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2509.24844" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs), with their temporal processing capabilities and biologically plausible dynamics, offer a natural platform for unsupervised representation learning. However, current unsupervised SNNs predominantly employ shallow architectures or localized plasticity rules, limiting their ability to model long-range temporal dependencies and maintain temporal feature consistency. This results in semantically unstable representations, thereby impeding the development of deep unsupervised SNNs for large-scale temporal video data. We propose PredNext, which explicitly models temporal relationships through cross-view future Step Prediction and Clip Prediction. This plug-and-play module seamlessly integrates with diverse self-supervised objectives. We firstly establish standard benchmarks for SNN self-supervised learning on UCF101, HMDB51, and MiniKinetics, which are substantially larger than conventional DVS datasets. PredNext delivers significant performance improvements across different tasks and self-supervised methods. PredNext achieves performance comparable to ImageNet-pretrained supervised weights through unsupervised training solely on UCF101. Additional experiments demonstrate that PredNext, distinct from forced consistency constraints, substantially improves temporal feature consistency while enhancing network generalization capabilities. This work provides a effective foundation for unsupervised deep SNNs on large-scale temporal video data.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">CaRe-BN: Precise Moving Statistics for Stabilizing Spiking Neural Networks in Reinforcement Learning</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2509.23791" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) offer low-latency and energy-efficient decision-making on neuromorphic hardware by mimicking the event-driven dynamics of biological neurons. However, due to the discrete and non-differentiable nature of spikes, directly trained SNNs rely heavily on Batch Normalization (BN) to stabilize gradient updates. In online Reinforcement Learning (RL), imprecise BN statistics hinder exploitation, resulting in slower convergence and suboptimal policies. This challenge limits the adoption of SNNs for energy-efficient control on resource-constrained devices. To overcome this, we propose Confidence-adaptive and Re-calibration Batch Normalization (CaRe-BN), which introduces (\emph{i}) a confidence-guided adaptive update strategy for BN statistics and (\emph{ii}) a re-calibration mechanism to align distributions. By providing more accurate normalization, CaRe-BN stabilizes SNN optimization without disrupting the RL training process. Importantly, CaRe-BN does not alter inference, thus preserving the energy efficiency of SNNs in deployment. Extensive experiments on continuous control benchmarks demonstrate that CaRe-BN improves SNN performance by up to across different spiking neuron models and RL algorithms. Remarkably, SNNs equipped with CaRe-BN even surpass their ANN counterparts by . These results highlight a new direction for BN techniques tailored to RL, paving the way for neuromorphic agents that are both efficient and high-performing.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Inter-event interval microscopy for event cameras</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://opg.optica.org/abstract.cfm?uri=prj-13-10-2843" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Event cameras detect intensity changes rather than absolute intensity, recording variations as a stream of “event.” Intensity reconstruction from these sparse events remains a significant challenge. Previous approaches focused on transforming motion-induced events into videos or achieving intensity imaging for static scenes through modulation devices at the acquisition end. In this paper, we present inter-event interval microscopy (IEIM), a paradigm-shifting technique enabling static and dynamic fluorescence imaging through photon flux-to-temporal encoding, which integrates a pulse-light modulation device into a microscope equipped with an event camera. We also develop the inter-event interval (IEI) reconstruction algorithm for IEIM, which quantifies time intervals between consecutive events at each pixel. With a fixed threshold in the event camera, this time interval can directly encode intensity. The integration …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SNNTracker: Online High-speed Multi-Object Tracking with Spike Camera</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11165142/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Multi-object tracking (MOT) is crucial for applications such as autonomous driving and robotics, yet traditional image-based methods struggle in high-speed scenarios due to motion blur and temporal gaps caused by low frame rates. Spike cameras, with their ability to continuously record spatiotemporal signals, overcome these limitations. However, existing spike-based methods often rely on intermediate image reconstruction or discrete clustering, which limits their real-time performance and temporal continuity. To address this, we propose SNNTracker, the first fully spiking neural network (SNN)-based MOT algorithm tailored for spike cameras. SNNTracker integrates a dynamic neural field (DNF)-based attention mechanism for target detection and a winner-take-all (WTA)-based tracking module with online spike-timing-dependent plasticity (STDP) for adaptive learning of object trajectories. By directly processing …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">STF: Shallow-Level Temporal Feedback to Enhance Spiking Transformers</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2508.00387" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Transformer-based Spiking Neural Networks (SNNs) suffer from a great performance gap compared to floating-point \mbox{Artificial} Neural Networks (ANNs) due to the binary nature of spike trains. Recent efforts have introduced deep-level feedback loops to transmit high-level semantic information to narrow this gap. However, these designs often span \mbox{multiple} deep layers, resulting in costly feature transformations, higher parameter overhead, increased energy consumption, and longer inference latency. To address this issue, we propose Shallow-level Temporal Feedback (STF), a lightweight plug-and-play module for the encoding layer, which consists of Temporal-Spatial Position Embedding (TSPE) and Temporal Feedback (TF). Extensive experiments show that STF consistently improves performance across various Transformer-based SNN backbones on static datasets, including CIFAR-10, CIFAR-100, and ImageNet-1K, under different spike timestep settings. Further analysis reveals that STF enhances the diversity of spike patterns, which is key to performance gain. Moreover, evaluations on adversarial robustness and temporal sensitivity confirm that STF outperforms direct coding and its variants, highlighting its potential as a new spike encoding scheme for static scenarios. Our code will be released upon acceptance.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Rapid Ghost Pedestrian Detection: Spike Vision for Safer Autonomous Driving</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://www.researchsquare.com/article/rs-5491257/latest" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Autonomous driving and robotics are increasingly focusing on improving safety, particularly in collision avoidance systems. Detecting unexpected obstacles quickly is essential for preventing accidents, especially in high-speed driving scenarios where the sudden appearance of pedestrians presents a significant challenge. Conventional systems often rely on prediction, but they struggle with obstacles emerging suddenly from blind spots, introducing delays in detection. Here, we show that spike cameras, can significantly reduce these delays by enabling rapid object detection. Our system integrates perception, reasoning, and action into an end-to-end, ultra-low-latency closed-loop that allows for faster reactions. Our system reduces the overall latency of detecting sudden appearance of objects to under 5 ms: in real-world ghosting pedestrian scenarios, it achieves a 97% success rate in obstacle avoidance tests …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Decoding natural visual scenes via learnable representations of neural spiking sequences</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S0893608025007439" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Visual input underpins cognitive function by providing the brain with essential environmental information. Neural decoding of visual scenes seeks to reconstruct pixel-level images from neural activity, a vital capability for vision restoration via brain-computer interfaces. However, extracting visual content from time-resolved spiking activity remains a significant challenge. Here, we introduce the Wavelet-Informed Spike Augmentation (WISA) model, which applies multilevel wavelet transforms to spike trains to learn compact representations that can be directly fed into deep reconstruction networks. When tested on recorded retinal spike data responding to natural video stimuli, WISA substantially improves reconstruction accuracy, especially in recovering fine-grained details. These results emphasize the value of temporal spike patterns for high-fidelity visual decoding and demonstrate WISA as a promising model for …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Proxy Target: Bridging the Gap Between Discrete Spiking Neural Networks and Continuous Control</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2505.24161" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) offer low-latency and energy-efficient decision making through neuromorphic hardware, making them compelling for Reinforcement Learning (RL) in resource-constrained edge devices. Recent studies in this field directly replace Artificial Neural Networks (ANNs) by SNNs in existing RL frameworks, overlooking whether the RL algorithm is suitable for SNNs. However, most RL algorithms in continuous control are designed tailored to ANNs, including the target network soft updates mechanism, which conflict with the discrete, non-differentiable dynamics of SNN spikes. We identify that this mismatch destabilizes SNN training in continuous control tasks. To bridge this gap between discrete SNN and continuous control, we propose a novel proxy target framework. The continuous and differentiable dynamics of the proxy target enable smooth updates, bypassing the incompatibility of SNN spikes, stabilizing the RL algorithms. Since the proxy network operates only during training, the SNN retains its energy efficiency during deployment without inference overhead. Extensive experiments on continuous control benchmarks demonstrate that compared to vanilla SNNs, the proxy target framework enables SNNs to achieve up to 32% higher performance across different spiking neurons. Notably, we are the first to surpass ANN performance in continuous control with simple Leaky-Integrate-and-Fire (LIF) neurons. This work motivates a new class of SNN-friendly RL algorithms tailored to SNN&#x27;s characteristics, paving the way for neuromorphic agents that combine high performance with low power consumption.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Converting High-Performance and Low-Latency SNNs Through Explicit Modeling of Residual Error in ANNs</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11017686/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) have garnered interest due to their energy efficiency and superior effectiveness on neuromorphic chips compared with traditional artificial neural networks (ANNs). One of the mainstream approaches to implementing deep SNNs is the ANN–SNN conversion, which integrates the efficient training strategy of ANNs with the energy-saving potential and fast inference capability of SNNs. However, under extremely low-latency conditions, the existing conversion theory suggests that the problem of SNNs’ neurons firing more or fewer spikes within each layer, i.e., residual error, leads to a performance gap in the converted SNNs compared with the original ANNs. This severely limits the possibility of the practical application of SNNs on delay-sensitive edge devices. Existing conversion methods addressing this problem usually involve modifying the state of the conversion spiking neurons …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeStereoNet: A Brain-Inspired Framework for Stereo Depth Estimation from Spike Streams</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2505.19487" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Conventional frame-based cameras often struggle with stereo depth estimation in rapidly changing scenes. In contrast, bio-inspired spike cameras emit asynchronous events at microsecond-level resolution, providing an alternative sensing modality. However, existing methods lack specialized stereo algorithms and benchmarks tailored to the spike data. To address this gap, we propose SpikeStereoNet, a brain-inspired framework and the first to estimate stereo depth directly from raw spike streams. The model fuses raw spike streams from two viewpoints and iteratively refines depth estimation through a recurrent spiking neural network (RSNN) update module. To benchmark our approach, we introduce a large-scale synthetic spike stream dataset and a real-world stereo spike dataset with dense depth annotations. SpikeStereoNet outperforms existing methods on both datasets by leveraging spike streams&#x27; ability to capture subtle edges and intensity shifts in challenging regions such as textureless surfaces and extreme lighting conditions. Furthermore, our framework exhibits strong data efficiency, maintaining high accuracy even with substantially reduced training data. The source code and datasets will be publicly available.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SPKLIP: Aligning Spike Video Streams with Natural Language</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2505.12656" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike cameras offer unique sensing capabilities but their sparse, asynchronous output challenges semantic understanding, especially for Spike Video-Language Alignment (Spike-VLA) where models like CLIP underperform due to modality mismatch. We introduce SPKLIP, the first architecture specifically for Spike-VLA. SPKLIP employs a hierarchical spike feature extractor that adaptively models multi-scale temporal dynamics in event streams, and uses spike-text contrastive learning to directly align spike video with language, enabling effective few-shot learning. A full-spiking visual encoder variant, integrating SNN components into our pipeline, demonstrates enhanced energy efficiency. Experiments show state-of-the-art performance on benchmark spike datasets and strong few-shot generalization on a newly contributed real-world dataset. SPKLIP&#x27;s energy efficiency highlights its potential for neuromorphic deployment, advancing event-based multimodal research. The source code and dataset are available at [link removed for anonymity].
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">TDFormer: A Top-Down Attention-Controlled Spiking Transformer</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2505.15840" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Traditional spiking neural networks (SNNs) can be viewed as a combination of multiple subnetworks with each running for one time step, where the parameters are shared, and the membrane potential serves as the only information link between them. However, the implicit nature of the membrane potential limits its ability to effectively represent temporal information. As a result, each time step cannot fully leverage information from previous time steps, seriously limiting the model&#x27;s performance. Inspired by the top-down mechanism in the brain, we introduce TDFormer, a novel model with a top-down feedback structure that functions hierarchically and leverages high-order representations from earlier time steps to modulate the processing of low-order information at later stages. The feedback structure plays a role from two perspectives: 1) During forward propagation, our model increases the mutual information across time steps, indicating that richer temporal information is being transmitted and integrated in different time steps. 2) During backward propagation, we theoretically prove that the feedback structure alleviates the problem of vanishing gradients along the time dimension. We find that these mechanisms together significantly and consistently improve the model performance on multiple datasets. In particular, our model achieves state-of-the-art performance on ImageNet with an accuracy of 86.83%.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Implementing feature binding through dendritic networks of a single neuron</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S0893608025004344" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+A single neuron receives an extensive array of synaptic inputs through its dendrites, raising the fundamental question of how these inputs undergo integration and summation, culminating in the initiation of spikes in the soma. Experimental and computational investigations have revealed various modes of integration operations that include linear, superlinear, and sublinear summation. Interestingly, different types of neurons exhibit diverse patterns of dendritic integration depending on the spatial distribution of dendrites. The functional implications of these specific integration modalities remain largely unexplored. In this study, we employ the Purkinje cell (PC) as a model system to investigate these complex questions. Our findings reveal that PCs generally exhibit sublinear summation across their expansive dendrites. Both spatial and temporal input dynamically modulates the degree of sublinearity. Strong …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SOTA: Spike-Navigated Optimal TrAnsport Saliency Region Detection in Composite-bias Videos</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2505.00394" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Existing saliency detection methods struggle in real-world scenarios due to motion blur and occlusions. In contrast, spike cameras, with their high temporal resolution, significantly enhance visual saliency maps. However, the composite noise inherent to spike camera imaging introduces discontinuities in saliency detection. Low-quality samples further distort model predictions, leading to saliency bias. To address these challenges, we propose Spike-navigated Optimal TrAnsport Saliency Region Detection (SOTA), a framework that leverages the strengths of spike cameras while mitigating biases in both spatial and temporal dimensions. Our method introduces Spike-based Micro-debias (SM) to capture subtle frame-to-frame variations and preserve critical details, even under minimal scene or lighting changes. Additionally, Spike-based Global-debias (SG) refines predictions by reducing inconsistencies across diverse conditions. Extensive experiments on real and synthetic datasets demonstrate that SOTA outperforms existing methods by eliminating composite noise bias. Our code and dataset will be released at https://github.com/lwxfight/sota.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spike Imaging Velocimetry: Dense Motion Estimation of Fluids Using Spike Cameras</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2504.18864" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The need for accurate and non-intrusive flow measurement methods has led to the widespread adoption of Particle Image Velocimetry (PIV), a powerful diagnostic tool in fluid motion estimation. This study investigates the tremendous potential of spike cameras (a type of ultra-high-speed, high-dynamic-range camera) in PIV. We propose a deep learning framework, Spike Imaging Velocimetry (SIV), designed specifically for highly turbulent and intricate flow fields. To aggregate motion features from the spike stream while minimizing information loss, we incorporate a Detail-Preserving Hierarchical Transform (DPHT) module. Additionally, we introduce a Graph Encoder (GE) to extract contextual features from highly complex fluid flows. Furthermore, we present a spike-based PIV dataset, Particle Scenes with Spike and Displacement (PSSD), which provides labeled data for three challenging fluid dynamics scenarios. Our proposed method achieves superior performance compared to existing baseline methods on PSSD. The datasets and our implementation of SIV are open-sourced in the supplementary materials.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Rethinking high-speed image reconstruction framework with spike camera</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/32207" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike cameras, as innovative neuromorphic devices, generate continuous spike streams to capture high-speed scenes with lower bandwidth and higher dynamic range than traditional RGB cameras. However, reconstructing high-quality images from the spike input under low-light conditions remains challenging. Conventional learning-based methods often rely on the synthetic dataset as the supervision for training. Still, these approaches falter when dealing with noisy spikes fired under the low-light environment, leading to further performance degradation in the real-world dataset. This phenomenon is primarily due to inadequate noise modelling and the domain gap between synthetic and real datasets, resulting in recovered images with unclear textures, excessive noise, and diminished brightness. To address these challenges, we introduce a novel spike-to-image reconstruction framework SpikeCLIP that goes beyond traditional training paradigms. Leveraging the CLIP model&#x27;s powerful capability to align text and images, we incorporate the textual description of the captured scene and unpaired high-quality datasets as the supervision. Textual descriptions provide additional context that guides the network&#x27;s feature reconstruction, while high-quality datasets help produce sharp latent images. Our experiments on real-world low-light datasets U-CALTECH and U-CIFAR demonstrate that SpikeCLIP significantly enhances texture details and the luminance balance of recovered images. Furthermore, the reconstructed images are well-aligned with the broader visual features needed for downstream tasks, ensuring more robust and versatile …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Enhancing NR-IQA Model Robustness through Simple Image Compression Techniques</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10960435/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+No-Reference Image Quality Assessment (NR-IQA) plays a crucial role in various real-world applications by predicting image quality scores without the need for reference images. Despite the impressive performance of deep learning-based NR-IQA models, they remain vulnerable to adversarial attacks, which introduce imperceptible perturbations to input images, causing significant changes in predicted scores. In this study, we explore the use of simple JPEG compression techniques, as well as their combination with norm regularization training, to defend against these adversarial attacks. Our results demonstrate that image compression is an effective method to enhance model robustness, and it can further improve the robustness of NR-IQA models when combined with appropriate training strategies. Since excessive compression may reduce performance on clean images, it is essential to strike a balance. This …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Assisting Training of Deep Spiking Neural Networks With Parameter Initialization</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10947245/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) exhibit significant advantages in terms of information encoding, computational capabilities, and power usage. We regard initializing weight distribution as a key problem for effective SNN training. When backpropagation (BP) through time is used in the initial training phase, it has a significant impact on gradient generation. We first derive an asymptotic formula for the response curve of spiking neurons, which approximates the real neuron response distribution. To avoid gradient vanishing, we then provide an initialization technique based on the slant asymptote. Finally, validations on classification tasks on the MNIST and CIFAR10 datasets demonstrate that our strategy can significantly speed up training and improve the model accuracy compared with other initialization methods. Further testing on various neuron configurations and training hyperparameters demonstrates comparable …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeDerain: Unveiling Clear Videos from Rainy Sequences Using Color Spike Streams</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2503.20315" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Restoring clear frames from rainy videos presents a significant challenge due to the rapid motion of rain streaks. Traditional frame-based visual sensors, which capture scene content synchronously, struggle to capture the fast-moving details of rain accurately. In recent years, neuromorphic sensors have introduced a new paradigm for dynamic scene perception, offering microsecond temporal resolution and high dynamic range. However, existing multimodal methods that fuse event streams with RGB images face difficulties in handling the complex spatiotemporal interference of raindrops in real scenes, primarily due to hardware synchronization errors and computational redundancy. In this paper, we propose a Color Spike Stream Deraining Network (SpikeDerain), capable of reconstructing spike streams of dynamic scenes and accurately removing rain streaks. To address the challenges of data scarcity in real continuous rainfall scenes, we design a physically interpretable rain streak synthesis model that generates parameterized continuous rain patterns based on arbitrary background images. Experimental results demonstrate that the network, trained with this synthetic data, remains highly robust even under extreme rainfall conditions. These findings highlight the effectiveness and robustness of our method across varying rainfall levels and datasets, setting new standards for video deraining tasks. The code will be released soon.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">脉冲深度学习梯度替代算法研究综述</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://lib.zjsru.edu.cn/25-10.11-3.pdf" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+摘 要 被誉为第三代神经网络模型的脉冲神经网络 (Spiking Neural Network, SNN) 具有二值通信, 稀疏激活, 事件驱动, 超低功耗的特性, 但也因其复杂的时域动态和离散不可导的脉冲发放过程而难以训练. 近年来以梯度替代法和人工神经网络 (Artificial Neural Network, ANN) 转换 SNN 方法为代表的深度学习方法被提出, 大幅度改善 SNN 性能, 形成了脉冲深度学习这一全新领域. 本文围绕梯度替代法的研究进展, 对其中的基础学习算法, 编码方式, 神经元和突触改进, 网络结构改进, 正则化方法, ANN 辅助训练算法, 事件驱动学习算法, 在线学习算法以及训练加速方法进行系统性地回顾和综述, 并选择其中的代表性方法进行实验对比分析, 讨论了目前的研究挑战和可能的解决方案, 最后展望了未来可能取得突破的研究方向.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpiLiFormer: Enhancing Spiking Transformers with Lateral Inhibition</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2503.15986" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) based on Transformers have garnered significant attention due to their superior performance and high energy efficiency. However, the spiking attention modules of most existing Transformer-based SNNs are adapted from those of analog Transformers, failing to fully address the issue of over-allocating attention to irrelevant contexts. To fix this fundamental yet overlooked issue, we propose a Lateral Inhibition-inspired Spiking Transformer (SpiLiFormer). It emulates the brain&#x27;s lateral inhibition mechanism, guiding the model to enhance attention to relevant tokens while suppressing attention to irrelevant ones. Our model achieves state-of-the-art (SOTA) performance across multiple datasets, including CIFAR-10 (+0.45%), CIFAR-100 (+0.48%), CIFAR10-DVS (+2.70%), N-Caltech101 (+1.94%), and ImageNet-1K (+1.6%). Notably, on the ImageNet-1K dataset, SpiLiFormer (69.9M parameters, 4 time steps, 384 resolution) outperforms E-SpikeFormer (173.0M parameters, 8 time steps, 384 resolution), a SOTA spiking Transformer, by 0.46% using only 39% of the parameters and half the time steps. Our code and training checkpoints will be released upon acceptance.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Differential coding for training-free ANN-to-SNN conversion</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2503.00301" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) exhibit significant potential due to their low energy consumption. Converting Artificial Neural Networks (ANNs) to SNNs is an efficient way to achieve high-performance SNNs. However, many conversion methods are based on rate coding, which requires numerous spikes and longer time-steps compared to directly trained SNNs, leading to increased energy consumption and latency. This article introduces differential coding for ANN-to-SNN conversion, a novel coding scheme that reduces spike counts and energy consumption by transmitting changes in rate information rather than rates directly, and explores its application across various layers. Additionally, the threshold iteration method is proposed to optimize thresholds based on activation distribution when converting Rectified Linear Units (ReLUs) to spiking neurons. Experimental results on various Convolutional Neural Networks (CNNs) and Transformers demonstrate that the proposed differential coding significantly improves accuracy while reducing energy consumption, particularly when combined with the threshold iteration method, achieving state-of-the-art performance. The source codes of the proposed method are available at https://github.com/h-z-h-cell/ANN-to-SNN-DCGS.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Ultrafast Probabilistic Neuron in an Artificial Spin Ice for Robust Deep Neural Networks</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202417334" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Deep neural networks (DNNs) have proved to be remarkably successful in various domains, in particular for implementing complex functions and performing sophisticated tasks. However, their vulnerability to adversarial noise undermines their reliability for safety‐critical tasks. Despite attempts to improve the robustness using algorithmic approaches, an effective hardware implementation is still lacking. Here an artificial probabilistic neuron device is proposed based on arrays of coupled nanomagnets, referred to as artificial spin ices, which return a nonlinear function with built‐in stochasticity in response to an ultrafast laser‐induced excitation. By exploiting solid‐state ionic gating, the magnetic coupling is electrically modulated, as a result of the magnetic anisotropy‐mediated competition of the symmetric exchange interaction and Dzyaloshinskii‐Moriya interaction, and hence the stochastic property of the neuron …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeDiff: Zero-shot High-Quality Video Reconstruction from Chromatic Spike Camera and Sub-millisecond Spike Streams</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://openaccess.thecvf.com/content/ICCV2025/html/Yang_SpikeDiff_Zero-shot_High-Quality_Video_Reconstruction_from_Chromatic_Spike_Camera_and_ICCV_2025_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+High-speed video reconstruction from neuromorphic spike cameras offers a promising alternative to traditional frame-based imaging, providing superior temporal resolution and dynamic range with reduced power consumption. Nevertheless, reconstructing high-quality colored videos from spikes captured in ultra-short time interval remains challenging due to the noisy nature of spikes. While some existing methods extend temporal capture window to improve reconstruction quality, they compromise the temporal resolution advantages of spike cameras. In this paper, we introduce SpikeDiff, the first zero-shot framework that leverages pretrained diffusion models to reconstruct high-quality colored videos from sub-millisecond chromatic spikes. By incorporating physics-based guidance into the diffusion sampling process, SpikeDiff bridges the domain gap between chromatic spikes and conventional images, enabling high-fidelity reconstruction without requiring domain-specific training data. Extensive experiments demonstrate that SpikeDiff achieves impressive reconstruction quality while maintaining ultra-high temporal resolution, outperforming existing methods across diverse challenging scenarios.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Self-Supervised Learning for Color Spike Camera Reconstruction</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2025/html/Dong_Self-Supervised_Learning_for_Color_Spike_Camera_Reconstruction_CVPR_2025_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera is a kind of neuromorphic camera with ultra-high temporal resolution, which can capture dynamic scenes by continuously firing spike signals. To capture color information, a color filter array (CFA) is employed on the sensor of the spike camera, resulting in Bayer-pattern spike streams. How to restore high-quality color images from the binary spike signals remains challenging. In this paper, we propose a motion-guided reconstruction method for spike cameras with CFA, utilizing color layout and estimated motion information. Specifically, we develop a joint motion estimation pipeline for the Bayer-pattern spike stream, exploiting the motion consistency of channels. We propose to estimate the missing pixels of each color channel according to temporally neighboring pixels of the corresponding color along the motion trajectory. As the spike signals are read out at discrete time points, there is quantization noise that impacts the image quality. Thus, we analyze the correlation of the noise in spatial and temporal domains and propose a self-supervised network utilizing a masked spike encoder to handle the noise. Experiments on real-world captured Bayer-pattern spike streams show that our method can restore color images with better visual quality, compared with state-of-the-art methods. The source codes are available at https://github. com/csycdong/SSL-CSC.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Inference-Scale Complexity in ANN-SNN Conversion for High-Performance and Low-Power Applications</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2025/html/Bu_Inference-Scale_Complexity_in_ANN-SNN_Conversion_for_High-Performance_and_Low-Power_Applications_CVPR_2025_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have emerged as a promising substitute for Artificial Neural Networks (ANNs) due to their advantages of fast inference and low power consumption. However, the lack of efficient training algorithms has hindered their widespread adoption. Even efficient ANN-SNN conversion methods necessitate quantized training of ANNs to enhance the effectiveness of the conversion, incurring additional training costs. To address these challenges, we propose an efficient ANN-SNN conversion framework with only inference scale complexity. The conversion framework includes a local threshold balancing algorithm, which enables efficient calculation of the optimal thresholds and fine-grained adjustment of the threshold value by channel-wise scaling. We also introduce an effective delayed evaluation strategy to mitigate the influence of the spike propagation delays. We demonstrate the scalability of our framework in typical computer vision tasks: image classification, semantic segmentation, object detection, and video classification. Our algorithm outperforms existing methods, highlighting its practical applicability and efficiency. Moreover, we have evaluated the energy consumption of the converted SNNs, demonstrating their superior low-power advantage compared to conventional ANNs. This approach simplifies the deployment of SNNs by leveraging open-source pre-trained ANN models, enabling fast, low-power inference with negligible performance reduction.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">USP-Gaussian: Unifying Spike-based Image Reconstruction, Pose Correction and Gaussian Splatting</h3>
+
+<div class="paper-meta">📄 2025</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2025/html/Chen_USP-Gaussian_Unifying_Spike-based_Image_Reconstruction_Pose_Correction_and_Gaussian_Splatting_CVPR_2025_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera, as an innovative type of neuromorphic camera that captures scenes with 0-1 bit stream at 40 kHz, is increasingly being employed for the novel view synthesis task building on the techniques such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS). Previous spike-based approaches typically follow a three-stage pipeline: I. Spike-to-image reconstruction based on established algorithms. II. Camera poses estimation. III. Novel view synthesis. However, the cascading framework suffers from substantial cumulative errors, ie, the quality of the initially reconstructed images will impact pose estimation, ultimately limiting the fidelity of the 3D reconstruction. To address this limitation, we propose a synergistic optimization framework USP-Gaussian, which unifies spike-to-image reconstruction, pose correction, and gaussian splatting into an end-to-end pipeline. Leveraging the multi-view consistency afforded by 3DGS and the motion capture capability of the spike camera, our framework enables iterative optimization between the spike-to-image reconstruction network and 3DGS. Experiments on synthetic datasets demonstrate that our method surpasses previous approaches by effectively eliminating cascading errors. Moreover, in real-world scenarios, our method achieves robust 3D reconstruction benefiting from the integration of pose optimization. Our code, data, and trained models are available at https://github. com/chenkang455/USP-Gaussian.
+</p>
+
+</div>
+</details>
+
+
+<details class="year-block" open>
+<summary class="year-summary"><span class="icon">📅</span>2024</summary>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Faster and Stronger: When ANN-SNN Conversion Meets Parallel Spiking Calculation</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2412.13610" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Network (SNN), as a brain-inspired and energy-efficient network, is currently facing the pivotal challenge of exploring a suitable and efficient learning framework. The predominant training methodologies, namely Spatial-Temporal Back-propagation (STBP) and ANN-SNN Conversion, are encumbered by substantial training overhead or pronounced inference latency, which impedes the advancement of SNNs in scaling to larger networks and navigating intricate application domains. In this work, we propose a novel parallel conversion learning framework, which establishes a mathematical mapping relationship between each time-step of the parallel spiking neurons and the cumulative spike firing rate. We theoretically validate the lossless and sorting properties of the conversion process, as well as pointing out the optimal shifting distance for each step. Furthermore, by integrating the above framework with the distribution-aware error calibration technique, we can achieve efficient conversion towards more general activation functions or training-free circumstance. Extensive experiments have confirmed the significant performance advantages of our method for various conversion cases under ultra-low time latency. To our best knowledge, this is the first work which jointly utilizes parallel spiking calculation and ANN-SNN Conversion, providing a highly promising approach for SNN supervised training. Code is available at https://github.com/hzc1208/Parallel_Conversion.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Continuous spatiotemporal events decoupling through spike-based Bayesian computation</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4fe1859112230a032c7143a9adc3be78-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Numerous studies have demonstrated that the cognitive processes of the human brain can be modeled using the Bayesian theorem for probabilistic inference of the external world. Spiking neural networks (SNNs), capable of performing Bayesian computation with greater physiological interpretability, offer a novel approach to distributed information processing in the cortex. However, applying these models to real-world scenarios to harness the advantages of brain-like computation remains a challenge. Recently, bio-inspired sensors with high dynamic range and ultra-high temporal resolution have been widely used in extreme vision scenarios. Event streams, generated by various types of motion, represent spatiotemporal data. Inferring motion targets from these streams without prior knowledge remains a difficult task. The Bayesian inference-based Expectation-Maximization (EM) framework has proven effective for motion segmentation in event streams, allowing for decoupling without prior information about the motion or its source. This work demonstrates that Bayesian computation based on spiking neural networks can decouple event streams of different motions. The Winner-Take-All (WTA) circuits in the constructed network implement an equivalent E-step, while STDP achieves an equivalent optimization in M-step. Through theoretical analysis and experiments, we show that STDP-based learning can maximize the contrast of warped events under mixed motion models. Experimental results show that the constructed spiking network can effectively segment the motion contained in event streams.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spiking transformer with experts mixture</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/137101016144540ed3191dc2b02f09a5-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) provide a sparse spike-driven mechanism which is believed to be critical for energy-efficient deep learning. Mixture-of-Experts (MoE), on the other side, aligns with the brain mechanism of distributed and sparse processing, resulting in an efficient way of enhancing model capacity and conditional computation. In this work, we consider how to incorporate SNNs’ spike-driven and MoE’s conditional computation into a unified framework. However, MoE uses softmax to get the dense conditional weights for each expert and TopK to hard-sparsify the network, which does not fit the properties of SNNs. To address this issue, we reformulate MoE in SNNs and introduce the Spiking Experts Mixture Mechanism (SEMM) from the perspective of sparse spiking activation. Both the experts and the router output spiking sequences, and their element-wise operation makes SEMM computation spike-driven and dynamic sparse-conditional. By developing SEMM into Spiking Transformer, the Experts Mixture Spiking Attention (EMSA) and the Experts Mixture Spiking Perceptron (EMSP) are proposed, which performs routing allocation for head-wise and channel-wise spiking experts, respectively. Experiments show that SEMM realizes sparse conditional computation and obtains a stable improvement on neuromorphic and static datasets with approximate computational overhead based on the Spiking Transformer baselines.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spikereveal: Unlocking temporal sequences from real blurry inputs with spike streams</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/7280f65ed571b7b28321f2c7cf4c60c8-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Reconstructing a sequence of sharp images from the blurry input is crucial for enhancing our insights into the captured scene and poses a significant challenge due to the limited temporal features embedded in the image. Spike cameras, sampling at rates up to 40,000 Hz, have proven effective in capturing motion features and beneficial for solving this ill-posed problem. Nonetheless, existing methods fall into the supervised learning paradigm, which suffers from notable performance degradation when applied to real-world scenarios that diverge from the synthetic training data domain. To address these challenges, we propose the first self-supervised framework for the task of spike-guided motion deblurring. Our approach begins with the formulation of a spike-guided deblurring model that explores the theoretical relationships among spike streams, blurry images, and their corresponding sharp sequences. We subsequently develop a self-supervised cascaded framework to alleviate the issues of spike noise and spatial-resolution mismatching encountered in the deblurring model. With knowledge distillation and re-blurring loss, we further design a lightweight deblur network to generate high-quality sequences with brightness and texture consistency with the original input. Quantitative and qualitative experiments conducted on our real-world and synthetic datasets with spikes validate the superior generalization of the proposed framework. Our code, data and trained models are available at\url {https://github. com/chenkang455/S-SDM}.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Lm-ht snn: Enhancing the performance of snn to ann counterpart through learnable multi-hierarchical threshold model</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b8bf2c0dd0b48511889b7d3b2c5fc8f5-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Compared to traditional Artificial Neural Network (ANN), Spiking Neural Network (SNN) has garnered widespread academic interest for its intrinsic ability to transmit information in a more energy-efficient manner. However, despite previous efforts to optimize the learning algorithm of SNNs through various methods, SNNs still lag behind ANNs in terms of performance. The recently proposed multi-threshold model provides more possibilities for further enhancing the learning capability of SNNs. In this paper, we rigorously analyze the relationship among the multi-threshold model, vanilla spiking model and quantized ANNs from a mathematical perspective, then propose a novel LM-HT model, which is an equidistant multi-threshold model that can dynamically regulate the global input current and membrane potential leakage on the time dimension. The LM-HT model can also be transformed into a vanilla single threshold model through reparameterization, thereby achieving more flexible hardware deployment. In addition, we note that the LM-HT model can seamlessly integrate with ANN-SNN Conversion framework under special initialization. This novel hybrid learning framework can effectively improve the relatively poor performance of converted SNNs under low time latency. Extensive experimental results have demonstrated that our model can outperform previous state-of-the-art works on various types of datasets, which promote SNNs to achieve a brand-new level of performance comparable to quantized ANNs. Code is available at https://github. com/hzc1208/LMHT_SNN.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spiking variational policy gradient for brain inspired reinforcement learning</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10786920/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Recent studies in reinforcement learning have explored brain-inspired function approximators and learning algorithms to simulate brain intelligence and adapt to neuromorphic hardware. Among these approaches, reward-modulated spike-timing-dependent plasticity (R-STDP) is biologically plausible and energy-efficient, but suffers from a gap between its local learning rules and the global learning objectives, which limits its performance and applicability. In this paper, we design a recurrent winner-take-all network and propose the spiking variational policy gradient (SVPG), a new R-STDP learning method derived theoretically from the global policy gradient. Specifically, the policy inference is derived from an energy-based policy function using mean-field inference, and the policy optimization is based on a last-step approximation of the global policy gradient. These fill the gap between the local learning rules and …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spikegs: 3d gaussian splatting from spike streams with high-speed camera motion</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3664647.3680996" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Novel View Synthesis plays a crucial role by generating new 2D renderings from multi-view images of 3D scenes. However, capturing high-speed scenes with conventional cameras often leads to motion blur, hindering the effectiveness of 3D reconstruction. To address this challenge, high-frame-rate dense 3D reconstruction emerges as a vital technique, enabling detailed and accurate modeling of real-world objects or scenes in various fields, including Virtual Reality or embodied AI. Spike cameras, a novel type of neuromorphic sensor, continuously record scenes with an ultra-high temporal resolution, showing potential for accurate 3D reconstruction. Despite their promise, existing approaches, such as applying Neural Radiance Fields (NeRF) to spike cameras, encounter challenges due to the time-consuming rendering process. To address this issue, we make the first attempt to introduce the 3D Gaussian …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">HM-DF SNN: Transcending Conventional Online Learning with Advanced Training and Deployment</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2410.07547" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) are considered to have enormous potential in the future development of Artificial Intelligence due to their brain-inspired and energy-efficient properties. Compared to vanilla Spatial-Temporal Back-propagation (STBP) training methods, online training can effectively overcome the risk of GPU memory explosion. However, current online learning framework cannot tackle the inseparability problem of temporal dependent gradients and merely aim to optimize the training memory, resulting in no performance advantages compared to the STBP training models in the inference phase. To address the aforementioned challenges, we propose Hybrid Mechanism-Driven Firing (HM-DF) model, which is a family of advanced models that respectively adopt different spiking calculation schemes in the upper-region and lower-region of the firing threshold. We point out that HM-DF model can effectively separate temporal gradients and tackle the mismatch problem of surrogate gradients, as well as achieving full-stage optimization towards computation speed and memory footprint. Experimental results have demonstrated that HM-DF model can be flexibly combined with various techniques to achieve state-of-the-art performance in the field of online learning, without triggering further power consumption.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Real-Data-Driven 2000 FPS Color Video from Mosaicked Chromatic Spikes</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://link.springer.com/chapter/10.1007/978-3-031-73254-6_18" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The spike camera continuously records scene radiance with high-speed, high dynamic range, and low data redundancy properties, as a promising replacement for frame-based high-speed cameras. Previous methods for reconstructing color videos from monochromatic spikes are constrained in capturing full-temporal color information due to their reliance on compensating colors from low-speed RGB frames. Applying a Bayer-pattern color filter array to the spike sensor yields mosaicked chromatic spikes, which complicates noise distribution in high-speed conditions. By validating that the noise of short-term frames follows a zero-mean distribution, we leverage this hypothesis to develop a self-supervised denoising module trained exclusively on real-world data. Although noise is reduced in short-term frames, the long-term accumulation of incident photons is still necessary to construct HDR frames. Therefore, we …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Training-free conversion of pretrained anns to snns for low-power and high-performance applications</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ui.adsabs.harvard.edu/abs/2024arXiv240903368B/abstract" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have emerged as a promising substitute for Artificial Neural Networks (ANNs) due to their advantages of fast inference and low power consumption. However, the lack of efficient training algorithms has hindered their widespread adoption. Existing supervised learning algorithms for SNNs require significantly more memory and time than their ANN counterparts. Even commonly used ANN-SNN conversion methods necessitate re-training of ANNs to enhance conversion efficiency, incurring additional computational costs. To address these challenges, we propose a novel training-free ANN-SNN conversion pipeline. Our approach directly converts pre-trained ANN models into high-performance SNNs without additional training. The conversion pipeline includes a local-learning-based threshold balancing algorithm, which enables efficient calculation of the optimal thresholds and fine …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">INeAT: an artifact-suppressed and resolution-enhanced computed tomography through iterative neural adaptive tomography</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://opg.optica.org/abstract.cfm?uri=oe-32-18-32336" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Computed tomography (CT) with its remarkable capability for three-dimensional imaging from multiple projections, enjoys a broad range of applications in clinical diagnosis, scientific observation, and industrial detection. Neural adaptive tomography (NeAT) is a recently proposed 3D rendering method based on neural radiance field for CT, and it demonstrates superior performance compared to traditional methods. However, it still faces challenges when dealing with the substantial perturbations and pose shifts encountered in CT scanning processes. Here, we propose a neural rendering method for CT reconstruction, named iterative neural adaptive tomography (INeAT), which incorporates iterative posture optimization to effectively counteract the influence of posture perturbations in data, particularly in cases involving significant posture variations. Through the implementation of a posture feedback optimization …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Decoding dynamic visual scenes across the brain hierarchy</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012297" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Understanding the computational mechanisms that underlie the encoding and decoding of environmental stimuli is a crucial investigation in neuroscience. Central to this pursuit is the exploration of how the brain represents visual information across its hierarchical architecture. A prominent challenge resides in discerning the neural underpinnings of the processing of dynamic natural visual scenes. Although considerable research efforts have been made to characterize individual components of the visual pathway, a systematic understanding of the distinctive neural coding associated with visual stimuli, as they traverse this hierarchical landscape, remains elusive. In this study, we leverage the comprehensive Allen Visual Coding—Neuropixels dataset and utilize the capabilities of deep learning neural network models to study neural coding in response to dynamic natural visual scenes across an expansive array of brain regions. Our study reveals that our decoding model adeptly deciphers visual scenes from neural spiking patterns exhibited within each distinct brain area. A compelling observation arises from the comparative analysis of decoding performances, which manifests as a notable encoding proficiency within the visual cortex and subcortical nuclei, in contrast to a relatively reduced encoding activity within hippocampal neurons. Strikingly, our results unveil a robust correlation between our decoding metrics and well-established anatomical and functional hierarchy indexes. These findings corroborate existing knowledge in visual coding related to artificial visual stimuli and illuminate the functional role of these deeper brain regions using …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Brain-inspired artificial intelligence research: A review</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://link.springer.com/article/10.1007/s11431-024-2732-9" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Artificial intelligence (AI) systems surpass certain human intelligence abilities in a statistical sense as a whole, but are not yet the true realization of these human intelligence abilities and behaviors. There are differences, and even contradictions, between the cognition and behavior of AI systems and humans. With the goal of achieving general AI, this study contains a review of the role of cognitive science in inspiring the development of the three mainstream academic branches of AI based on the three-layer framework proposed by David Marr, and the limitations of the current development of AI are explored and analyzed. The differences and inconsistencies between the cognition mechanisms of the human brain and the computation mechanisms of AI systems are analyzed. They are found to be the cause of the differences and contradictions between the cognition and behavior of AI systems and humans …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Assessment of visual function in blind mice and monkeys with subretinally implanted nanowire arrays as artificial photoreceptors</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://www.nature.com/articles/s41551-023-01137-8" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Retinal prostheses could restore image-forming vision in conditions of photoreceptor degeneration. However, contrast sensitivity and visual acuity are often insufficient. Here we report the performance, in mice and monkeys with induced photoreceptor degeneration, of subretinally implanted gold-nanoparticle-coated titania nanowire arrays providing a spatial resolution of 77.5 μm and a temporal resolution of 3.92 Hz in ex vivo retinas (as determined by patch-clamp recording of retinal ganglion cells). In blind mice, the arrays allowed for the detection of drifting gratings and flashing objects at light-intensity thresholds of 15.70–18.09 μW mm–2, and offered visual acuities of 0.3–0.4 cycles per degree, as determined by recordings of visually evoked potentials and optomotor-response tests. In monkeys, the arrays were stable for 54 weeks, allowed for the detection of a 10-μW mm–2 beam of light (0.5° in beam …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Regulating Temporal Neural Coding via Fast and Slow Synaptic Dynamics</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10579496/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The NMDA receptor (NMDAR), as a ubiquitous type of synapse in neural systems of the brain, presents slow dynamics to modulate neural spiking activity. For the cerebellum, NMDARs have been suggested for contributing complex spikes in Purkinje cells (PCs) as a mechanism for cognitive activity, learning, and memory. Recent experimental studies are debating the role of NMDAR in PC dendritic input, yet it remains unclear how the distribution of NMDARs in PC dendrites can affect their neural spiking coding properties. In this work, a detailed multiple-compartment PC model was used to study how slow-scale NMDARs together with fast-scale AMPA, regulate neural coding. We find that NMDARs act as a band-pass filter, increasing the excitability of PC firing under low-frequency input while reducing it under high frequency. This effect is positively related to the strength of NMDARs. For a response sequence …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeMM: Flexi-Magnification of High-Speed Micro-Motions</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2406.00383" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The amplification of high-speed micro-motions holds significant promise, with applications spanning fault detection in fast-paced industrial environments to refining precision in medical procedures. However, conventional motion magnification algorithms often encounter challenges in high-speed scenarios due to low sampling rates or motion blur. In recent years, spike cameras have emerged as a superior alternative for visual tasks in such environments, owing to their unique capability to capture temporal and spatial frequency domains with exceptional fidelity. Unlike conventional cameras, which operate at fixed, low frequencies, spike cameras emulate the functionality of the retina, asynchronously capturing photon changes at each pixel position using spike streams. This innovative approach comprehensively records temporal and spatial visual information, rendering it particularly suitable for magnifying high-speed micro-motions.This paper introduces SpikeMM, a pioneering spike-based algorithm tailored specifically for high-speed motion magnification. SpikeMM integrates multi-level information extraction, spatial upsampling, and motion magnification modules, offering a self-supervised approach adaptable to a wide range of scenarios. Notably, SpikeMM facilitates seamless integration with high-performance super-resolution and motion magnification algorithms. We substantiate the efficacy of SpikeMM through rigorous validation using scenes captured by spike cameras, showcasing its capacity to magnify motions in real-world high-frequency settings.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Autaptic synaptic circuit enhances spatio-temporal predictive learning of spiking neural networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2406.00405" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) emulate the integrated-fire-leak mechanism found in biological neurons, offering a compelling combination of biological realism and energy efficiency. In recent years, they have gained considerable research interest. However, existing SNNs predominantly rely on the Leaky Integrate-and-Fire (LIF) model and are primarily suited for simple, static tasks. They lack the ability to effectively model long-term temporal dependencies and facilitate spatial information interaction, which is crucial for tackling complex, dynamic spatio-temporal prediction tasks. To tackle these challenges, this paper draws inspiration from the concept of autaptic synapses in biology and proposes a novel Spatio-Temporal Circuit (STC) model. The STC model integrates two learnable adaptive pathways, enhancing the spiking neurons&#x27; temporal memory and spatial coordination. We conduct a theoretical analysis of the dynamic parameters in the STC model, highlighting their contribution in establishing long-term memory and mitigating the issue of gradient vanishing. Through extensive experiments on multiple spatio-temporal prediction datasets, we demonstrate that our model outperforms other adaptive models. Furthermore, our model is compatible with existing spiking neuron models, thereby augmenting their dynamic representations. In essence, our work enriches the specificity and topological complexity of SNNs.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Robust stable spiking neural networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2405.20694" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) are gaining popularity in deep learning due to their low energy budget on neuromorphic hardware. However, they still face challenges in lacking sufficient robustness to guard safety-critical applications such as autonomous driving. Many studies have been conducted to defend SNNs from the threat of adversarial attacks. This paper aims to uncover the robustness of SNN through the lens of the stability of nonlinear systems. We are inspired by the fact that searching for parameters altering the leaky integrate-and-fire dynamics can enhance their robustness. Thus, we dive into the dynamics of membrane potential perturbation and simplify the formulation of the dynamics. We present that membrane potential perturbation dynamics can reliably convey the intensity of perturbation. Our theoretical analyses imply that the simplified perturbation dynamics satisfy input-output stability. Thus, we propose a training framework with modified SNN neurons and to reduce the mean square of membrane potential perturbation aiming at enhancing the robustness of SNN. Finally, we experimentally verify the effectiveness of the framework in the setting of Gaussian noise training and adversarial training on the image classification task.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Enhancing adversarial robustness in SNNs with sparse gradients</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2405.20355" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have attracted great attention for their energy-efficient operations and biologically inspired structures, offering potential advantages over Artificial Neural Networks (ANNs) in terms of energy efficiency and interpretability. Nonetheless, similar to ANNs, the robustness of SNNs remains a challenge, especially when facing adversarial attacks. Existing techniques, whether adapted from ANNs or specifically designed for SNNs, exhibit limitations in training SNNs or defending against strong attacks. In this paper, we propose a novel approach to enhance the robustness of SNNs through gradient sparsity regularization. We observe that SNNs exhibit greater resilience to random perturbations compared to adversarial perturbations, even at larger scales. Motivated by this, we aim to narrow the gap between SNNs under adversarial and random perturbations, thereby improving their overall robustness. To achieve this, we theoretically prove that this performance gap is upper bounded by the gradient sparsity of the probability associated with the true label concerning the input image, laying the groundwork for a practical strategy to train robust SNNs by regularizing the gradient sparsity. We validate the effectiveness of our approach through extensive experiments on both image-based and event-based datasets. The results demonstrate notable improvements in the robustness of SNNs. Our work highlights the importance of gradient sparsity in SNNs and its role in enhancing robustness.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">One forward is enough for neural network training via likelihood ratio method</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2305.08960" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+While backpropagation (BP) is the mainstream approach for gradient computation in neural network training, its heavy reliance on the chain rule of differentiation constrains the designing flexibility of network architecture and training pipelines. We avoid the recursive computation in BP and develop a unified likelihood ratio (ULR) method for gradient estimation with just one forward propagation. Not only can ULR be extended to train a wide variety of neural network architectures, but the computation flow in BP can also be rearranged by ULR for better device adaptation. Moreover, we propose several variance reduction techniques to further accelerate the training process. Our experiments offer numerical results across diverse aspects, including various neural network training scenarios, computation flow rearrangement, and fine-tuning of pre-trained models. All findings demonstrate that ULR effectively enhances the flexibility of neural network training by permitting localized module training without compromising the global objective and significantly boosts the network robustness.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Revealing the mechanisms of semantic satiation with deep learning models</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://www.nature.com/articles/s42003-024-06162-0" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The phenomenon of semantic satiation, which refers to the loss of meaning of a word or phrase after being repeated many times, is a well-known psychological phenomenon. However, the microscopic neural computational principles responsible for these mechanisms remain unknown. In this study, we use a deep learning model of continuous coupled neural networks to investigate the mechanism underlying semantic satiation and precisely describe this process with neuronal components. Our results suggest that, from a mesoscopic perspective, semantic satiation may be a bottom-up process. Unlike existing macroscopic psychological studies that suggest that semantic satiation is a top-down process, our simulations use a similar experimental paradigm as classical psychology experiments and observe similar results. Satiation of semantic objectives, similar to the learning process of our network model used for …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Enhancing the robustness of spiking neural networks with stochastic gating mechanisms</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/27804" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) exploit neural spikes to provide solutions for low-power intelligent applications on neuromorphic hardware. Although SNNs have high computational efficiency due to spiking communication, they still lack resistance to adversarial attacks and noise perturbations. In the brain, neuronal responses generally possess stochasticity induced by ion channels and synapses, while the role of stochasticity in computing tasks is poorly understood. Inspired by this, we elaborate a stochastic gating spiking neural model for layer-by-layer spike communication, introducing stochasticity to SNNs. Through theoretical analysis, our gating model can be viewed as a regularizer that prevents error amplification under attacks. Meanwhile, our work can explain the robustness of Poisson coding. Experimental results prove that our method can be used alone or with existing robust enhancement algorithms to improve SNN robustness and reduce SNN energy consumption. We hope our work will shed new light on the role of stochasticity in the computation of SNNs. Our code is available at https://github.com/DingJianhao/StoG-meets-SNN/.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Transient glimpses: unveiling occluded backgrounds through the spike camera</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/27820" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The de-occlusion problem, involving extracting clear background images by removing foreground occlusions, holds significant practical importance but poses considerable challenges. Most current research predominantly focuses on generating discrete images from calibrated camera arrays, but this approach often struggles with dense occlusions and fast motions due to limited perspectives and motion blur. To overcome these limitations, an effective solution requires the integration of multi-view visual information. The spike camera, as an innovative neuromorphic sensor, shows promise with its ultra-high temporal resolution and dynamic range. In this study, we propose a novel approach that utilizes a single spike camera for continuous multi-view imaging to address occlusion removal. By rapidly moving the spike camera, we capture a dense stream of spikes from occluded scenes. Our model, SpkOccNet, processes these spikes by integrating multi-view spatial-temporal information via long-short-window feature extractor (LSW) and employs a novel cross-view mutual attention-based module (CVA) for effective fusion and refinement. Additionally, to facilitate research in occlusion removal, we introduce the S-OCC dataset, which consists of real-world spike-based data. Experimental results demonstrate the efficiency and generalization capabilities of our model in effectively removing dense occlusions across diverse scenes. Public project page: https://github.com/Leozhangjiyuan/SpikeDeOcclusion.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Optical flow for spike camera with hierarchical spatial-temporal spike fusion</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/28581" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+As an emerging neuromorphic camera with an asynchronous working mechanism, spike camera shows good potential for high-speed vision tasks. Each pixel in spike camera accumulates photons persistently and fires a spike whenever the accumulation exceeds a threshold. Such high-frequency fine-granularity photon recording facilitates the analysis and recovery of dynamic scenes with high-speed motion. This paper considers the optical flow estimation problem for spike cameras. Due to the Poisson nature of incoming photons, the occurrence of spikes is random and fluctuating, making conventional image matching inefficient. We propose a Hierarchical Spatial-Temporal (HiST) fusion module for spike representation to pursue reliable feature matching and develop a robust optical flow network, dubbed as HiST-SFlow. The HiST extracts features at multiple moments and hierarchically fuses the spatial-temporal information. We also propose an intra-moment filtering module to further extract the feature and suppress the influence of randomness in spikes. A scene loss is proposed to ensure that this hierarchical representation recovers the essential visual information in the scene. Experimental results demonstrate that the proposed method achieves state-of-the-art performance compared with the existing methods. The source codes will be publicly available.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Recognizing ultra-high-speed moving objects with bio-inspired spike camera</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/28579" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Bio-inspired spike camera mimics the sampling principle of primate fovea. It presents high temporal resolution and dynamic range, showing great promise in fast-moving object recognition. However, the physical limit of CMOS technology in spike cameras still hinders their capability of recognizing ultra-high-speed moving objects, e.g., extremely fast motions cause blur during the imaging process of spike cameras. This paper presents the first theoretical analysis for the causes of spiking motion blur and proposes a robust representation that addresses this issue through temporal-spatial context learning. The proposed method leverages multi-span feature aggregation to capture temporal cues and employs residual deformable convolution to model spatial correlation among neighbouring pixels. Additionally, this paper contributes an original real-captured spiking recognition dataset consisting of 12,000 \textbf{ultra-high-speed} (equivalent speed &gt; 500 km/h) moving objects. Experimental results show that the proposed method achieves 73.2% accuracy in recognizing 10 classes of ultra-high-speed moving objects, outperforming all existing spike-based recognition methods. Resources will be available at https://github.com/Evin-X/UHSR.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spike-Based Vision for Autonomous Driving Scenarios</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://www.engineering.org.cn/sscae/EN/abstract/article/1009-1742/38265" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Autonomous driving is an important research direction in computer vision which has broad application prospects. Pure vision perception schemes have significant research value in autonomous driving scenarios. Different from traditional cameras, spike vision sensor offers imaging speeds over a thousand times faster than traditional cameras, possess advantages such as high temporal resolution, high dynamic range, low data redundancy, and low power consumption. This study focuses on autonomous driving scenarios, introducing the imaging principles, perception capabilities, and advantages of the spike camera. Besides, focusing on visual tasks related to autonomous driving, this study elaborates on the principles and methods of spike-based image/video reconstruction, discusses the approach to image enhancement based on sensor fusion with spike cameras,and provides a detailed description of the …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Converting artificial neural networks to ultralow-latency spiking neural networks for action recognition</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10466357/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) have garnered significant attention for their potential in ultralow-power event-driven neuromorphic hardware implementations. One effective strategy for obtaining SNNs involves the conversion of artificial neural networks (ANNs) to SNNs. However, existing research on ANN–SNN conversion has predominantly focused on image classification task, leaving the exploration of action recognition task limited. In this article, we investigate the performance degradation of SNNs on action recognition task. Through in-depth analysis, we propose a framework called scalable dual threshold mapping (SDM) that effectively overcomes three types of conversion errors. By effectively mitigating these conversion errors, we are able to reduce the time required for the spike firing rate of SNNs to align with the activation values of ANNs. Consequently, our method enables the generation of accurate and …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Robust decoding of rich dynamical visual scenes with retinal spikes</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10413505/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Sensory information transmitted to the brain activates neurons to create a series of coping behaviors. Understanding the mechanisms of neural computation and reverse engineering the brain to build intelligent machines requires establishing a robust relationship between stimuli and neural responses. Neural decoding aims to reconstruct the original stimuli that trigger neural responses. With the recent upsurge of artificial intelligence, neural decoding provides an insightful perspective for designing novel algorithms of brain–machine interface. For humans, vision is the dominant contributor to the interaction between the external environment and the brain. In this study, utilizing the retinal neural spike data collected over multi trials with visual stimuli of two movies with different levels of scene complexity, we used a neural network decoder to quantify the decoded visual stimuli with six different metrics for image quality …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Deep Learning for Visual Neuroprosthesis</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2401.03639" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The visual pathway involves complex networks of cells and regions which contribute to the encoding and processing of visual information. While some aspects of visual perception are understood, there are still many unanswered questions regarding the exact mechanisms of visual encoding and the organization of visual information along the pathway. This chapter discusses the importance of visual perception and the challenges associated with understanding how visual information is encoded and represented in the brain. Furthermore, this chapter introduces the concept of neuroprostheses: devices designed to enhance or replace bodily functions, and highlights the importance of constructing computational models of the visual pathway in the implementation of such devices. A number of such models, employing the use of deep learning models, are outlined, and their value to understanding visual coding and natural vision is discussed.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Comprehensive online training and deployment for spiking neural networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://openreview.net/forum?id=JAnyCnK5In" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) are considered to have enormous potential in the future development of Artificial Intelligence (AI) due to their brain-inspired and energy-efficient properties. In the current supervised learning domain of SNNs, compared to vanilla Spatial-Temporal Back-propagation (STBP) training, online training can effectively overcome the risk of GPU memory explosion and has received widespread academic attention. However, the current proposed online training methods cannot tackle the inseparability problem of temporal dependent gradients and merely aim to optimize the training memory, resulting in no performance advantages compared to the STBP training models in the inference phase. To address the aforementioned challenges, we propose Efficient Multi-Precision Firing (EM-PF) model, which is a family of advanced spiking models based on floating-point spikes and binary synaptic weights. We point out that EM-PF model can effectively separate temporal gradients and achieve full-stage optimization towards computation speed and memory footprint. Experimental results have demonstrated that EM-PF model can be flexibly combined with various techniques including random back-propagation, parallel computation and channel attention mechanism, to achieve state-of-the-art performance with extremely low computational overhead in the field of online learning.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Real-time parameter evaluation of high-speed microfluidic droplets using continuous spike streams</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3664647.3681378" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Droplet-based microfluidic devices, with their high throughput and low power consumption, have found wide-ranging applications in the life sciences, such as drug discovery and cancer detection. However, the lack of real-time methods for accurately estimating droplet generation parameters has resulted in droplet microfluidic systems remaining largely offline-controlled, making it challenging to achieve efficient feedback in droplet generation. To meet the real-time requirements, it&#x27;s imperative to minimize the data throughput of the collection system while employing parameter estimation algorithms that are both resource-efficient and highly effective. Spike camera, as an innovative form of neuromorphic camera, facilitates high temporal resolution scene capture with comparatively low data throughput. In this paper, we propose a real-time evaluation method for high-speed droplet parameters based on spike-based …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Towards High-performance Spiking Transformers from ANN to SNN Conversion</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3664647.3680620" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) show great potential due to their energy efficiency, fast processing capabilities, and robustness. There are two main approaches to constructing SNNs. Direct training methods require much memory, while conversion methods offer a simpler and more efficient option. However, current conversion methods mainly focus on converting convolutional neural networks (CNNs) to SNNs. Converting Transformers to SNN is challenging because of the presence of non-linear modules. In this paper, we propose an Expectation Compensation Module to preserve the accuracy of the conversion. The core idea is to use information from the previous T time-steps to calculate the expected output at time-step T. We also propose a Multi-Threshold Neuron and the corresponding Parallel Parameter normalization to address the challenge of large time steps needed for high accuracy, aiming to reduce …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Towards Low-latency Event-based Visual Recognition with Hybrid Step-wise Distillation Spiking Neural Networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3664647.3680832" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) have garnered significant attention for their low power consumption and high biological interpretability. Their rich spatio-temporal information processing capability and event-driven nature make them ideally well-suited for neuromorphic datasets. However, current SNNs struggle to balance accuracy and latency in classifying these datasets. In this paper, we propose Hybrid Step-wise Distillation (HSD) method, tailored for neuromorphic datasets, to mitigate the notable decline in performance at lower time steps. Our work disentangles the dependency between the number of event frames and the time steps of SNNs, utilizing more event frames during the training stage to improve performance, while using fewer event frames during the inference stage to reduce latency. Nevertheless, the average output of SNNs across all time steps is susceptible to individual time step with abnormal …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Exploring efficient asymmetric blind-spots for self-supervised denoising in real-world scenarios</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Chen_Exploring_Efficient_Asymmetric_Blind-Spots_for_Self-Supervised_Denoising_in_Real-World_Scenarios_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Self-supervised denoising has attracted widespread attention due to its ability to train without clean images. However noise in real-world scenarios is often spatially correlated which causes many self-supervised algorithms that assume pixel-wise independent noise to perform poorly. Recent works have attempted to break noise correlation with downsampling or neighborhood masking. However denoising on downsampled subgraphs can lead to aliasing effects and loss of details due to a lower sampling rate. Furthermore the neighborhood masking methods either come with high computational complexity or do not consider local spatial preservation during inference. Through the analysis of existing methods we point out that the key to obtaining high-quality and texture-rich results in real-world self-supervised denoising tasks is to train at the original input resolution structure and use asymmetric operations during training and inference. Based on this we propose Asymmetric Tunable Blind-Spot Network (AT-BSN) where the blind-spot size can be freely adjusted thus better balancing noise correlation suppression and image local spatial destruction during training and inference. In addition we regard the pre-trained AT-BSN as a meta-teacher network capable of generating various teacher networks by sampling different blind-spots. We propose a blind-spot based multi-teacher distillation strategy to distill a lightweight network significantly improving performance. Experimental results on multiple datasets prove that our method achieves state-of-the-art and is superior to other self-supervised algorithms in terms of computational overhead and visual …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Intensity-robust autofocus for spike camera</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Su_Intensity-Robust_Autofocus_for_Spike_Camera_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike cameras a novel neuromorphic visual sensor can capture full-time spatial information through spike stream offering ultra-high temporal resolution and an extensive dynamic range. Autofocus control (AC) plays a pivotal role in a camera to efficiently capture information in challenging real-world scenarios. Nevertheless due to disparities in data modality and information characteristics compared to frame stream and event stream the current lack of efficient AC methods has made it challenging for spike cameras to adapt to intricate real-world conditions. To address this challenge we introduce a spike-based autofocus framework that includes a spike-specific focus measure called spike dispersion (SD) which effectively mitigates the influence of variations in scene light intensity during the focusing process by leveraging the spike camera&#x27;s ability to record full-time spatial light intensity. Additionally the framework integrates a fast search strategy called spike-based golden fast search (SGFS) allowing rapid focal positioning without the need for a complete focus range traversal. To validate the performance of our method we have collected a spike-based autofocus dataset (SAD) containing synthetic data and real-world data under varying scene brightness and motion scenarios. Experimental results on these datasets demonstrate that our method offers state-of-the-art accuracy and efficiency. Furthermore experiments with data captured under varying scene brightness levels illustrate the robustness of our method to changes in light intensity during the focusing process.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spike-guided motion deblurring with unknown modal spatiotemporal alignment</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Spike-guided_Motion_Deblurring_with_Unknown_Modal_Spatiotemporal_Alignment_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The traditional frame-based cameras that rely on exposure windows for imaging experience motion blur in high-speed scenarios. Frame-based deblurring methods lack reliable motion cues to restore sharp images under extreme blur conditions. The spike camera is a novel neuromorphic visual sensor that outputs spike streams with ultra-high temporal resolution. It can supplement the temporal information lost in traditional cameras and guide motion deblurring. However in real-world scenarios aligning discrete RGB images and continuous spike streams along both temporal and spatial axes is challenging due to the complexity of calibrating their coordinates device displacements in vibrations and time deviations. Misalignment of pixels leads to severe degradation of deblurring. We introduce the first framework for spike-guided motion deblurring without knowing the spatiotemporal alignment between spikes and images. To address the problem we first propose a novel three-stage network containing a basic deblurring net a carefully designed bi-directional deformable aligning module and a flow-based multi-scale fusion net. Experimental results demonstrate that our approach can effectively guide the image deblurring with unknown alignment surpassing the performance of other methods. Public project page: https://github. com/Leozhangjiyuan/UaSDN.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Super-resolution reconstruction from Bayer-pattern spike streams</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Dong_Super-Resolution_Reconstruction_from_Bayer-Pattern_Spike_Streams_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera is a neuromorphic vision sensor that can capture highly dynamic scenes by generating a continuous stream of binary spikes to represent the arrival of photons at very high temporal resolution. Equipped with Bayer color filter array (CFA) color spike camera (CSC) has been invented to capture color information. Although spike camera has already demonstrated great potential for high-speed imaging its spatial resolution is limited compared with conventional digital cameras. This paper proposes a Color Spike Camera Super-Resolution (CSCSR) network to super-resolve higher-resolution color images from spike camera streams with Bayer CFA. To be specific we first propose a representation for Bayer-pattern spike streams exploring local temporal information with global perception to represent the binary data. Then we exploit the CFA layout and sub-pixel level motion to collect temporal pixels for the spatial super-resolution of each color channel. In particular a residual-based module for feature refinement is developed to reduce the impact of motion estimation errors. Considering color correlation we jointly utilize the multi-stage temporal-pixel features of color channels to reconstruct the high-resolution color image. Experimental results demonstrate that the proposed scheme can reconstruct satisfactory color images with both high temporal and spatial resolution from low-resolution Bayer-pattern spike streams. The source codes are available at https://github. com/csycdong/CSCSR.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Boosting spike camera image reconstruction from a perspective of dealing with spike fluctuations</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Boosting_Spike_Camera_Image_Reconstruction_from_a_Perspective_of_Dealing_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+As a bio-inspired vision sensor with ultra-high speed spike cameras exhibit great potential in recording dynamic scenes with high-speed motion or drastic light changes. Different from traditional cameras each pixel in spike cameras records the arrival of photons continuously by firing binary spikes at an ultra-fine temporal granularity. In this process multiple factors impact the imaging including the photons&#x27; Poisson arrival thermal noises from circuits and quantization effects in spike readout. These factors introduce fluctuations to spikes making the recorded spike intervals unstable and unable to reflect accurate light intensities. In this paper we present an approach to deal with spike fluctuations and boost spike camera image reconstruction. We first analyze the quantization effects and reveal the unbiased estimation attribute of the reciprocal of differential of spike firing time (DSFT). Based on this we propose a spike representation module to use DSFT with multiple orders for fluctuation suppression where DSFT with higher orders indicates spike integration duration between multiple spikes. We also propose a module for inter-moment feature alignment at multiple granularities. The coarser alignment is based on patch-level cross-attention with a local search strategy and the finer alignment is based on deformable convolution at the pixel level. Experimental results demonstrate the effectiveness of our method on both synthetic and real-captured data. The source code and dataset are available at https://github. com/ruizhao26/BSF.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spikingresformer: Bridging resnet and vision transformer in spiking neural networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2024/html/Shi_SpikingResformer_Bridging_ResNet_and_Vision_Transformer_in_Spiking_Neural_Networks_CVPR_2024_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The remarkable success of Vision Transformers in Artificial Neural Networks (ANNs) has led to a growing interest in incorporating the self-attention mechanism and transformer-based architecture into Spiking Neural Networks (SNNs). While existing methods propose spiking self-attention mechanisms that are compatible with SNNs they lack reasonable scaling methods and the overall architectures proposed by these methods suffer from a bottleneck in effectively extracting local features. To address these challenges we propose a novel spiking self-attention mechanism named Dual Spike Self-Attention (DSSA) with a reasonable scaling method. Based on DSSA we propose a novel spiking Vision Transformer architecture called SpikingResformer which combines the ResNet-based multi-stage architecture with our proposed DSSA to improve both performance and energy efficiency while reducing parameters. Experimental results show that SpikingResformer achieves higher accuracy with fewer parameters and lower energy consumption than other spiking Vision Transformer counterparts. Notably our SpikingResformer-L achieves 79.40% top-1 accuracy on ImageNet with 4 time-steps which is the state-of-the-art result in the SNN field.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Threaten spiking neural networks through combining rate and temporal information</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://openreview.net/forum?id=xv8iGxENyI" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have received widespread attention in academic communities due to their superior spatio-temporal processing capabilities and energy-efficient characteristics. With further in-depth application in various fields, the vulnerability of SNNs under adversarial attack has become a focus of concern. In this paper, we draw inspiration from two mainstream learning algorithms of SNNs and observe that SNN models reserve both rate and temporal information. To better understand the capabilities of these two types of information, we conduct a quantitative analysis separately for each. In addition, we note that the retention degree of temporal information is related to the parameters and input settings of spiking neurons. Building on these insights, we propose a hybrid adversarial attack based on rate and temporal information (HART), which allows for dynamic adjustment of the rate and temporal attributes. Experimental results demonstrate that compared to previous works, HART attack can achieve significant superiority under different attack scenarios, data types, network architecture, time-steps, and model hyper-parameters. These findings call for further exploration into how both types of information can be effectively utilized to enhance the reliability of SNNs. Code is available at [https://github.com/hzc1208/HART_Attack](https://github.com/hzc1208/HART_Attack).
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Online stabilization of spiking neural networks</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://openreview.net/forum?id=CIj1CVbkpr" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs), attributed to the binary, event-driven nature of spikes, possess heightened biological plausibility and enhanced energy efficiency on neuromorphic hardware compared to analog neural networks (ANNs). Mainstream SNN training schemes apply backpropagation-through-time (BPTT) with surrogate gradients to replace the non-differentiable spike emitting process during backpropagation. While achieving competitive performance, the requirement for storing intermediate information at all time-steps incurs higher memory consumption and fails to fulfill the online property crucial to biological brains. Our work focuses on online training techniques, aiming for memory efficiency while preserving biological plausibility. The limitation of not having access to future information in early time steps in online training has constrained previous efforts to incorporate advantageous modules such as batch normalization. To address this problem, we propose Online Spiking Renormalization (OSR) to ensure consistent parameters between testing and training, and Online Threshold Stabilizer (OTS) to stabilize neuron firing rates across time steps. Furthermore, we design a novel online approach to compute the sample mean and variance over time for OSR. Experiments conducted on various datasets demonstrate the proposed method&#x27;s superior performance among SNN online training algorithms. Our code is available at https://github.com/zhuyaoyu/SNN-online-normalization.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Towards energy efficient spiking neural networks: An unstructured pruning framework</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://openreview.net/forum?id=eoSeaK4QJo" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have emerged as energy-efficient alternatives to Artificial Neural Networks (ANNs) when deployed on neuromorphic chips. While recent studies have demonstrated the impressive performance of deep SNNs on challenging tasks, their energy efficiency advantage has been diminished. Existing methods targeting energy consumption reduction do not fully exploit sparsity, whereas powerful pruning methods can achieve high sparsity but are not directly targeted at energy efficiency, limiting their effectiveness in energy saving. Furthermore, none of these works fully exploit the sparsity of neurons or the potential for unstructured neuron pruning in SNNs. In this paper, we propose a novel pruning framework that combines unstructured weight pruning with unstructured neuron pruning to maximize the utilization of the sparsity of neuromorphic computing, thereby enhancing energy efficiency. To the best of our knowledge, this is the first application of unstructured neuron pruning to deep SNNs. Experimental results demonstrate that our method achieves impressive energy efficiency gains. The sparse network pruned by our method with only 0.63\% remaining connections can achieve a remarkable 91 times increase in energy efficiency compared to the original dense network, requiring only 8.5M SOPs for inference, with merely 2.19\% accuracy loss on the CIFAR-10 dataset. Our work suggests that deep and dense SNNs exhibit high redundancy in energy consumption, highlighting the potential for targeted SNN sparsification to save energy.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">A progressive training framework for spiking neural networks with learnable multi-hierarchical model</h3>
+
+<div class="paper-meta">📄 2024</div>
+
+<a class="paper-link" href="https://openreview.net/forum?id=g52tgL8jy6" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have garnered considerable attention due to their energy efficiency and unique biological characteristics. However, the widely adopted Leaky Integrate-and-Fire (LIF) model, as the mainstream neuron model in current SNN research, has been revealed to exhibit significant deficiencies in deep-layer gradient calculation and capturing global information on the time dimension. In this paper, we propose the Learnable Multi-hierarchical (LM-H) model to address these issues by dynamically regulating its membrane-related factors. We point out that the LM-H model fully encompasses the information representation range of the LIF model while offering the flexibility to adjust the extraction ratio between historical and current information. Additionally, we theoretically demonstrate the effectiveness of the LM-H model and the functionality of its internal parameters, and propose a progressive training algorithm tailored specifically for the LM-H model. Furthermore, we devise an efficient training framework for our novel advanced model, encompassing hybrid training and time-slicing online training. Through extensive experiments on various datasets, we validate the remarkable superiority of our model and training algorithm compared to previous state-of-the-art approaches. Code is available at [https://github.com/hzc1208/STBP_LMH](https://github.com/hzc1208/STBP_LMH).
+</p>
+
+</div>
+</details>
+
+
+<details class="year-block" open>
+<summary class="year-summary"><span class="icon">📅</span>2023</summary>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Deep Pulse-Coupled Neural Networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2401.08649" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) capture the information processing mechanism of the brain by taking advantage of spiking neurons, such as the Leaky Integrate-and-Fire (LIF) model neuron, which incorporates temporal dynamics and transmits information via discrete and asynchronous spikes. However, the simplified biological properties of LIF ignore the neuronal coupling and dendritic structure of real neurons, which limits the spatio-temporal dynamics of neurons and thus reduce the expressive power of the resulting SNNs. In this work, we leverage a more biologically plausible neural model with complex dynamics, i.e., a pulse-coupled neural network (PCNN), to improve the expressiveness and recognition performance of SNNs for vision tasks. The PCNN is a type of cortical model capable of emulating the complex neuronal activities in the primary visual cortex. We construct deep pulse-coupled neural networks (DPCNNs) by replacing commonly used LIF neurons in SNNs with PCNN neurons. The intra-coupling in existing PCNN models limits the coupling between neurons only within channels. To address this limitation, we propose inter-channel coupling, which allows neurons in different feature maps to interact with each other. Experimental results show that inter-channel coupling can efficiently boost performance with fewer neurons, synapses, and less training time compared to widening the networks. For instance, compared to the LIF-based SNN with wide VGG9, DPCNN with VGG9 uses only 50%, 53%, and 73% of neurons, synapses, and training time, respectively. Furthermore, we propose receptive field and time dependent batch normalization (RFTD-BN) to speed up the convergence and performance of DPCNNs.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Protocol for dissecting cascade computational components in neural networks of a visual system</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S2666166723006895" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Finding the complete functional circuits of neurons is a challenging problem in brain research. Here, we present a protocol, based on visual stimuli and spikes, for obtaining the complete circuit of recorded neurons using spike-triggered nonnegative matrix factorization. We describe steps for data preprocessing, inferring the spatial receptive field of the subunits, and analyzing the module matrix. This approach identifies computational components of the feedforward network of retinal ganglion cells and dissects the network structure based on natural image stimuli.For complete details on the use and execution of this protocol, please refer to Jia et al. (2021).1
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Parallel spiking neurons with high efficiency and ability to learn long-term dependencies</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/a834ac3dfdb90da54292c2c932c997cc-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Vanilla spiking neurons in Spiking Neural Networks (SNNs) use charge-fire-reset neuronal dynamics, which can only be simulated serially and can hardly learn long-time dependencies. We find that when removing reset, the neuronal dynamics can be reformulated in a non-iterative form and parallelized. By rewriting neuronal dynamics without reset to a general formulation, we propose the Parallel Spiking Neuron (PSN), which generates hidden states that are independent of their predecessors, resulting in parallelizable neuronal dynamics and extremely high simulation speed. The weights of inputs in the PSN are fully connected, which maximizes the utilization of temporal information. To avoid the use of future inputs for step-by-step inference, the weights of the PSN can be masked, resulting in the masked PSN. By sharing weights across time-steps based on the masked PSN, the sliding PSN is proposed to handle sequences of varying lengths. We evaluate the PSN family on simulation speed and temporal/static data classification, and the results show the overwhelming advantage of the PSN family in efficiency and accuracy. To the best of our knowledge, this is the first study about parallelizing spiking neurons and can be a cornerstone for the spiking deep learning research. Our codes are available at https://github. com/fangwei123456/Parallel-Spiking-Neuron.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Enhancing motion deblurring in high-speed scenes with spike streams</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/dead3d8ff3f9198e38a36a950ebbcafd-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Traditional cameras produce desirable vision results but struggle with motion blur in high-speed scenes due to long exposure windows. Existing frame-based deblurring algorithms face challenges in extracting useful motion cues from severely blurred images. Recently, an emerging bio-inspired vision sensor known as the spike camera has achieved an extremely high frame rate while preserving rich spatial details, owing to its novel sampling mechanism. However, typical binary spike streams are relatively low-resolution, degraded image signals devoid of color information, making them unfriendly to human vision. In this paper, we propose a novel approach that integrates the two modalities from two branches, leveraging spike streams as auxiliary visual cues for guiding deblurring in high-speed motion scenes. We propose the first spike-based motion deblurring model with bidirectional information complementarity. We introduce a content-aware motion magnitude attention module that utilizes learnable mask to extract relevant information from blurry images effectively, and we incorporate a transposed cross-attention fusion module to efficiently combine features from both spike data and blurry RGB images. Furthermore, we build two extensive synthesized datasets for training and validation purposes, encompassing high-temporal-resolution spikes, blurry images, and corresponding sharp images. The experimental results demonstrate that our method effectively recovers clear RGB images from highly blurry scenes and outperforms state-of-the-art deblurring algorithms in multiple settings.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Exploring loss functions for time-based training strategy in spiking neural networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/cde874a797a8300da693d5e412b7fdc0-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) are considered promising brain-inspired energy-efficient models due to their event-driven computing paradigm. The spatiotemporal spike patterns used to convey information in SNNs consist of both rate coding and temporal coding, where the temporal coding is crucial to biological-plausible learning rules such as spike-timing-dependent-plasticity. The time-based training strategy is proposed to better utilize the temporal information in SNNs and learn in an asynchronous fashion. However, some recent works train SNNs by the time-based scheme with rate-coding-dominated loss functions. In this paper, we first map rate-based loss functions to time-based counterparts and explain why they are also applicable to the time-based training scheme. After that, we infer that loss functions providing adequate positive overall gradients help training by theoretical analysis. Based on this, we propose the enhanced counting loss to replace the commonly used mean square counting loss. In addition, we transfer the training of scale factor in weight standardization into thresholds. Experiments show that our approach outperforms previous time-based training methods in most datasets. Our work provides insights for training SNNs with time-based schemes and offers a fresh perspective on the correlation between rate coding and temporal coding. Our code is available at https://github. com/zhuyaoyu/SNN-temporal-training-losses.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Unsupervised optical flow estimation with dynamic timing representation for spike camera</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/96810b6d4752abe7bfb91f234c51e9e6-Abstract-Conference.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Efficiently selecting an appropriate spike stream data length to extract precise information is the key to the spike vision tasks. To address this issue, we propose a dynamic timing representation for spike streams. Based on multi-layers architecture, it applies dilated convolutions on temporal dimension to extract features on multi-temporal scales with few parameters. And we design layer attention to dynamically fuse these features. Moreover, we propose an unsupervised learning method for optical flow estimation in a spike-based manner to break the dependence on labeled data. In addition, to verify the robustness, we also build a spike-based synthetic validation dataset for extreme scenarios in autonomous driving, denoted as SSES dataset. It consists of various corner cases. Experiments show that our method can predict optical flow from spike streams in different high-speed scenes, including real scenes. For instance, our method achieves and error reduction on PHM dataset compared to the best spike-based work, SCFlow, in and respectively, using the same settings as in previous works. The source code and dataset are available at\href {https://github. com/Bosserhead/USFlow}{https://github. com/Bosserhead/USFlow}.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">INeAT: Iterative Neural Adaptive Tomography</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2311.01653" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Computed Tomography (CT) with its remarkable capability for three-dimensional imaging from multiple projections, enjoys a broad range of applications in clinical diagnosis, scientific observation, and industrial detection. Neural Adaptive Tomography (NeAT) is a recently proposed 3D rendering method based on neural radiance field for CT, and it demonstrates superior performance compared to traditional methods. However, it still faces challenges when dealing with the substantial perturbations and pose shifts encountered in CT scanning processes. Here, we propose a neural rendering method for CT reconstruction, named Iterative Neural Adaptive Tomography (INeAT), which incorporates iterative posture optimization to effectively counteract the influence of posture perturbations in data, particularly in cases involving significant posture variations. Through the implementation of a posture feedback optimization strategy, INeAT iteratively refines the posture corresponding to the input images based on the reconstructed 3D volume. We demonstrate that INeAT achieves artifact-suppressed and resolution-enhanced reconstruction in scenarios with significant pose disturbances. Furthermore, we show that our INeAT maintains comparable reconstruction performance to stable-state acquisitions even using data from unstable-state acquisitions, which significantly reduces the time required for CT scanning and relaxes the stringent requirements on imaging hardware systems, underscoring its immense potential for applications in short-time and low-cost CT technology.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Recognizing High-Speed Moving Objects with Spike Camera</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3581783.3612054" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera is a novel bio-inspired vision sensor that mimics the sampling mechanism of the primate fovea. It presents high temporal resolution and dynamic range, showing great potentials in the high-speed moving object recognition task, which has not been fully explored in the Multimedia community due to the lack of data and annotations. This paper contributes the first large-scale High-Speed Spiking Recognition (HSSR) dataset, by recording high-speed moving objects using a spike camera. The HSSR dataset contains 135,000 indoor objects annotated using ImageNet labels and 3,100 outdoor objects collected from real-world scenarios. Furthermore, we propose an original spiking recognition framework, which employs long-term spike stream features to supervise the feature learning from short-term spike streams. This framework improves the recognition accuracy, meanwhile substantially decreasing the …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spike camera image reconstruction using deep spiking neural networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10288531/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera is a bio-inspired sensor with ultra-high temporal resolution and low energy consumption. It captures visual signals using an “integrate-and-fire” mechanism and outputs a continuous stream of binary spikes. Reconstructing image sequence from spikes streams is critical for spike camera. Several reconstruction methods have been proposed in recent years. However, the computational cost of these methods is relatively high. Inspired by the fact that spiking neural networks (SNNs) are energy efficient and support time-series signal processing inherently, we propose a lightweight SNN for spike camera image reconstruction (abbreviated to SSIR). Experimental results show that SSIR achieves comparable performance with the state-of-the-art (SOTA) methods at much lower computation and energy cost.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spikingjelly: An open-source machine learning infrastructure platform for spike-based intelligence</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://www.science.org/doi/abs/10.1126/sciadv.adi1480" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking neural networks (SNNs) aim to realize brain-inspired intelligence on neuromorphic chips with high energy efficiency by introducing neural dynamics and spike properties. As the emerging spiking deep learning paradigm attracts increasing interest, traditional programming frameworks cannot meet the demands of the automatic differentiation, parallel computation acceleration, and high integration of processing neuromorphic datasets and deployment. In this work, we present the SpikingJelly framework to address the aforementioned dilemma. We contribute a full-stack toolkit for preprocessing neuromorphic datasets, building deep SNNs, optimizing their parameters, and deploying SNNs on neuromorphic chips. Compared to existing methods, the training of deep SNNs can be accelerated 11×, and the superior extensibility and flexibility of SpikingJelly enable users to accelerate custom models at low costs …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Research on neural encoding models for biological vision: Progress and challenges</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://jeit.ac.cn/en/article/doi/10.11999/JEIT221368" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The visual system encodes rich and dense dynamic visual stimuli into time-varying neural responses through neurons. Exploring the functional relationship between visual stimuli and neural responses is a common approach to understanding neural encoding mechanisms. Neural encoding models of the visual system are presented throughout this paper, which can be grouped into two categories: biophysical encoding models and artificial neural network encoding models. Then parameter estimation methods for various models are introduced. By comparing the characteristics of various models, the respective advantages, application scenarios and existing problems are summarized. Finally, the current situation and future challenges of visual encoding research are summarized and forecasted.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Unveiling the potential of spike streams for foreground occlusion removal from densely continuous views</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2307.00821" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The extraction of a clean background image by removing foreground occlusion holds immense practical significance, but it also presents several challenges. Presently, the majority of de-occlusion research focuses on addressing this issue through the extraction and synthesis of discrete images from calibrated camera arrays. Nonetheless, the restoration quality tends to suffer when faced with dense occlusions or high-speed motions due to limited perspectives and motion blur. To successfully remove dense foreground occlusion, an effective multi-view visual information integration approach is required. Introducing the spike camera as a novel type of neuromorphic sensor offers promising capabilities with its ultra-high temporal resolution and high dynamic range. In this paper, we propose an innovative solution for tackling the de-occlusion problem through continuous multi-view imaging using only one spike camera without any prior knowledge of camera intrinsic parameters and camera poses. By rapidly moving the spike camera, we continually capture the dense stream of spikes from the occluded scene. To process the spikes, we build a novel model \textbf{SpkOccNet}, in which we integrate information of spikes from continuous viewpoints within multi-windows, and propose a novel cross-view mutual attention mechanism for effective fusion and refinement. In addition, we contribute the first real-world spike-based dataset \textbf{S-OCC} for occlusion removal. The experimental results demonstrate that our proposed model efficiently removes dense occlusions in diverse scenes while exhibiting strong generalization.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Reducing ANN-SNN Conversion Error through Residual Membrane Potential</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25071" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have received extensive academic attention due to the unique properties of low power consumption and high-speed computing on neuromorphic chips. Among various training methods of SNNs, ANN-SNN conversion has shown the equivalent level of performance as ANNs on large-scale datasets. However, unevenness error, which refers to the deviation caused by different temporal sequences of spike arrival on activation layers, has not been effectively resolved and seriously suffers the performance of SNNs under the condition of short time-steps. In this paper, we make a detailed analysis of unevenness error and divide it into four categories. We point out that the case of the ANN output being zero while the SNN output being larger than zero accounts for the largest percentage. Based on this, we theoretically prove the sufficient and necessary conditions of this case and propose an optimization strategy based on residual membrane potential to reduce unevenness error. The experimental results show that the proposed method achieves state-of-the-art performance on CIFAR-10, CIFAR-100, and ImageNet datasets. For example, we reach top-1 accuracy of 64.32% on ImageNet with 10-steps. To the best of our knowledge, this is the first time ANN-SNN conversion can simultaneously achieve high accuracy and ultra-low-latency on the complex dataset. Code is available at https://github. com/hzc1208/ANN2SNN_SRP.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Self-supervised joint dynamic scene reconstruction and optical flow estimation for spiking camera</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25108" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking camera, a novel retina-inspired vision sensor, has shown its great potential for capturing high-speed dynamic scenes with a sampling rate of 40,000 Hz. The spiking camera abandons the concept of exposure window, with each of its photosensitive units continuously capturing photons and firing spikes asynchronously. However, the special sampling mechanism prevents the frame-based algorithm from being used to spiking camera. It remains to be a challenge to reconstruct dynamic scenes and perform common computer vision tasks for spiking camera. In this paper, we propose a self-supervised joint learning framework for optical flow estimation and reconstruction of spiking camera. The framework reconstructs clean frame-based spiking representations in a self-supervised manner, and then uses them to train the optical flow networks. We also propose an optical flow based inverse rendering process to achieve self-supervision by minimizing the difference with respect to the original spiking temporal aggregation image. The experimental results demonstrate that our method bridges the gap between synthetic and real-world scenes and achieves desired results in real-world scenarios. To the best of our knowledge, this is the first attempt to jointly reconstruct dynamic scenes and estimate optical flow for spiking camera from a self-supervised learning perspective.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Learning temporal-ordered representation for spike streams based on discrete wavelet transforms</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25085" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spike camera, a new type of neuromorphic visual sensor that imitates the sampling mechanism of the primate fovea, can capture photons and output 40000 Hz binary spike streams. Benefiting from the asynchronous sampling mechanism, the spike camera can record fast-moving objects and clear images can be recovered from the spike stream at any specified timestamps without motion blurring. Despite these, due to the dense time sequence information of the discrete spike stream, it is not easy to directly apply the existing algorithms of traditional cameras to the spike camera. Therefore, it is necessary and interesting to explore a universally effective representation of dense spike streams to better fit various network architectures. In this paper, we propose to mine temporal-robust features of spikes in time-frequency space with wavelet transforms. We present a novel Wavelet-Guided Spike Enhancing (WGSE) paradigm consisting of three consecutive steps: multi-level wavelet transform, CNN-based learnable module, and inverse wavelet transform. With the assistance of WGSE, the new streaming representation of spikes can be learned. We demonstrate the effectiveness of WGSE on two downstream tasks, achieving state-of-the-art performance on the image reconstruction task and getting considerable performance on semantic segmentation. Furthermore, We build a new spike-based synthesized dataset for semantic segmentation. Code and Datasets are available at https://github. com/Leozhangjiyuan/WGSE-SpikeCamera.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Spike timing reshapes robustness against attacks in spiking neural networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2306.05654" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+The success of deep learning in the past decade is partially shrouded in the shadow of adversarial attacks. In contrast, the brain is far more robust at complex cognitive tasks. Utilizing the advantage that neurons in the brain communicate via spikes, spiking neural networks (SNNs) are emerging as a new type of neural network model, boosting the frontier of theoretical investigation and empirical application of artificial neural networks and deep learning. Neuroscience research proposes that the precise timing of neural spikes plays an important role in the information coding and sensory processing of the biological brain. However, the role of spike timing in SNNs is less considered and far from understood. Here we systematically explored the timing mechanism of spike coding in SNNs, focusing on the robustness of the system against various types of attacks. We found that SNNs can achieve higher robustness improvement using the coding principle of precise spike timing in neural encoding and decoding, facilitated by different learning rules. Our results suggest that the utility of spike timing coding in SNNs could improve the robustness against attacks, providing a new approach to reliable coding principles for developing next-generation brain-inspired deep learning.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">1000× faster camera and machine vision with ordinary devices</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S2095809922002077" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+In digital cameras, we find a major limitation: the image and video form inherited from a film camera obstructs it from capturing the rapidly changing photonic world. Here, we present vform, a bit sequence array where each bit represents whether the accumulation of photons has reached a threshold, to record and reconstruct the scene radiance at any moment. By employing only consumer-level complementary metal–oxide semiconductor (CMOS) sensors and integrated circuits, we have developed a spike camera that is 1000× faster than conventional cameras. By treating vform as spike trains in biological vision, we have further developed a spiking neural network (SNN)-based machine vision system that combines the speed of the machine and the mechanism of biological vision, achieving high-speed object detection and tracking 1000× faster than human vision. We demonstrate the utility of the spike camera and …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpiReco: Fast and efficient recognition of high-speed moving objects with spike camera</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10114387/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Benefited from the high temporal resolution and high dynamic range, spike cameras have shown great potential in recognizing high-speed moving objects. However, the computer vision community has not explored this task due to the lack of spike data and annotations of high-speed moving objects. This paper contributes a novel dataset, named SpiReco (Spiking datasets for Recognition), by recording high-speed moving objects using a spike camera. To annotate the dataset, image labels from established datasets such as MNIST, CIFAR10, and CALTECH101 are utilized. Based on this new dataset, this paper proposes the first spike-based object recognition framework. The proposed framework includes a denoise module, which is designed to suppress spike noise by learning spatio-temporal correlation from neighbouring pixels. Additionally, a motion enhancement module is introduced to address high-speed …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Diverse role of NMDA receptors for dendritic integration of neural dynamics</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011019" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Neurons, represented as a tree structure of morphology, have various distinguished branches of dendrites. Different types of synaptic receptors distributed over dendrites are responsible for receiving inputs from other neurons. NMDA receptors (NMDARs) are expressed as excitatory units, and play a key physiological role in synaptic function. Although NMDARs are widely expressed in most types of neurons, they play a different role in the cerebellar Purkinje cells (PCs). Utilizing a computational PC model with detailed dendritic morphology, we explored the role of NMDARs at different parts of dendritic branches and regions. We found somatic responses can switch from silent, to simple spikes and complex spikes, depending on specific dendritic branches. Detailed examination of the dendrites regarding their diameters and distance to soma revealed diverse response patterns, yet explain two firing modes, simple and complex spike. Taken together, these results suggest that NMDARs play an important role in controlling excitability sensitivity while taking into account the factor of dendritic properties. Given the complexity of neural morphology varying in cell types, our work suggests that the functional role of NMDARs is not stereotyped but highly interwoven with local properties of neuronal structure.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">SpikeCV: open a continuous computer vision era</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2303.11684" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+SpikeCV is a new open-source computer vision platform for the spike camera, which is a neuromorphic visual sensor that has developed rapidly in recent years. In the spike camera, each pixel position directly accumulates the light intensity and asynchronously fires spikes. The output binary spikes can reach a frequency of 40,000 Hz. As a new type of visual expression, spike sequence has high spatiotemporal completeness and preserves the continuous visual information of the external world. Taking advantage of the low latency and high dynamic range of the spike camera, many spike-based algorithms have made significant progress, such as high-quality imaging and ultra-high-speed target detection. To build up a community ecology for the spike vision to facilitate more users to take advantage of the spike camera, SpikeCV provides a variety of ultra-high-speed scene datasets, hardware interfaces, and an easy-to-use modules library. SpikeCV focuses on encapsulation for spike data, standardization for dataset interfaces, modularization for vision tasks, and real-time applications for challenging scenes. With the advent of the open-source Python ecosystem, modules of SpikeCV can be used as a Python library to fulfilled most of the numerical analysis needs of researchers. We demonstrate the efficiency of the SpikeCV on offline inference and real-time applications. The project repository address are \url{https://openi.pcl.ac.cn/Cordium/SpikeCV} and \url{https://github.com/Zyj061/SpikeCV
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Optimal ANN-SNN conversion for high-accuracy and ultra-low-latency spiking neural networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2303.04347" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have gained great attraction due to their distinctive properties of low power consumption and fast inference on neuromorphic hardware. As the most effective method to get deep SNNs, ANN-SNN conversion has achieved comparable performance as ANNs on large-scale datasets. Despite this, it requires long time-steps to match the firing rates of SNNs to the activation of ANNs. As a result, the converted SNN suffers severe performance degradation problems with short time-steps, which hamper the practical application of SNNs. In this paper, we theoretically analyze ANN-SNN conversion error and derive the estimated activation function of SNNs. Then we propose the quantization clip-floor-shift activation function to replace the ReLU activation function in source ANNs, which can better approximate the activation function of SNNs. We prove that the expected conversion error between SNNs and ANNs is zero, enabling us to achieve high-accuracy and ultra-low-latency SNNs. We evaluate our method on CIFAR-10/100 and ImageNet datasets, and show that it outperforms the state-of-the-art ANN-SNN and directly trained SNNs in both accuracy and time-steps. To the best of our knowledge, this is the first time to explore high-performance ANN-SNN conversion with ultra-low latency (4 time-steps). Code is available at https://github.com/putshua/SNN\_conversion\_QCFS
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">A unified framework for soft threshold pruning</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2302.13019" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Soft threshold pruning is among the cutting-edge pruning methods with state-of-the-art performance. However, previous methods either perform aimless searching on the threshold scheduler or simply set the threshold trainable, lacking theoretical explanation from a unified perspective. In this work, we reformulate soft threshold pruning as an implicit optimization problem solved using the Iterative Shrinkage-Thresholding Algorithm (ISTA), a classic method from the fields of sparse recovery and compressed sensing. Under this theoretical framework, all threshold tuning strategies proposed in previous studies of soft threshold pruning are concluded as different styles of tuning -regularization term. We further derive an optimal threshold scheduler through an in-depth study of threshold scheduling based on our framework. This scheduler keeps -regularization coefficient stable, implying a time-invariant objective function from the perspective of optimization. In principle, the derived pruning algorithm could sparsify any mathematical model trained via SGD. We conduct extensive experiments and verify its state-of-the-art performance on both Artificial Neural Networks (ResNet-50 and MobileNet-V1) and Spiking Neural Networks (SEW ResNet-18) on ImageNet datasets. On the basis of this framework, we derive a family of pruning methods, including sparsify-during-training, early pruning, and pruning at initialization. The code is available at https://github.com/Yanqi-Chen/LATS.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Meta reinforcement learning for multi-task offloading in vehicular edge computing</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10050793/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Mobile edge computing has been a promising solution to enable real-time service in vehicular networks. However, due to high dynamics of mobile environment and heterogeneous features of vehicular services, traditional expert-based or learning-based strategies has to update handcrafted parameters or retrain learning model, which leads to intolerant overhead. Therefore, this paper investigates the problem of multi-task offloading (MTO), where there exist multiple offloading scenarios with varying parameters, such as task topology, resource requirement and transmission/computation capability. The objective is to design a unified solution to minimize task execution time under different MTO scenarios. Accordingly, we develop a Seq2seq-based Meta Reinforcement Learning algorithm for MTO (SMRL-MTO). Specifically, a bidirectional gated recurrent units integrated with attention mechanism is designed to …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Bridging the Gap between ANNs and SNNs by Calibrating Offset Spikes</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2302.10685" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have attracted great attention due to their distinctive characteristics of low power consumption and temporal information processing. ANN-SNN conversion, as the most commonly used training method for applying SNNs, can ensure that converted SNNs achieve comparable performance to ANNs on large-scale datasets. However, the performance degrades severely under low quantities of time-steps, which hampers the practical applications of SNNs to neuromorphic chips. In this paper, instead of evaluating different conversion errors and then eliminating these errors, we define an offset spike to measure the degree of deviation between actual and desired SNN firing rates. We perform a detailed analysis of offset spike and note that the firing of one additional (or one less) spike is the main cause of conversion errors. Based on this, we propose an optimization strategy based on shifting the initial membrane potential and we theoretically prove the corresponding optimal shifting distance for calibrating the spike. In addition, we also note that our method has a unique iterative property that enables further reduction of conversion errors. The experimental results show that our proposed method achieves state-of-the-art performance on CIFAR-10, CIFAR-100, and ImageNet datasets. For example, we reach a top-1 accuracy of 67.12% on ImageNet when using 6 time-steps. To the best of our knowledge, this is the first time an ANN-SNN conversion has been shown to simultaneously achieve high accuracy and ultralow latency on complex datasets. Code is available at https://github.com/hzc1208/ANN2SNN_COS.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">A novel noise injection-based training scheme for better model robustness</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://arxiv.org/abs/2302.10802" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Noise injection-based method has been shown to be able to improve the robustness of artificial neural networks in previous work. In this work, we propose a novel noise injection-based training scheme for better model robustness. Specifically, we first develop a likelihood ratio method to estimate the gradient with respect to both synaptic weights and noise levels for stochastic gradient descent training. Then, we design an approximation for the vanilla noise injection-based training method to reduce memory and improve computational efficiency. Next, we apply our proposed scheme to spiking neural networks and evaluate the performance of classification accuracy and robustness on MNIST and Fashion-MNIST datasets. Experiment results show that our proposed method achieves a much better performance on adversarial robustness and slightly better performance on original accuracy, compared with the conventional gradient-based training method.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">基于普通器件实现快 1000 倍的相机与机器视觉</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://www.engineering.org.cn/engi/CN/10.1016/j.eng.2022.01.012" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+在数码相机中,我们发现了一个重大缺陷,即从胶片相机继承的图像和视频模型阻碍了相机捕捉快速变化的光子世界.我们提出了一种新的视觉形式,称为视象(vform),这是一个比特序列阵列,其中每个比特表示光子的累积是否达到了一个阈值,从而可以记录和重建任何时刻场景的光强.仅使用消费级CMOS(互补金属氧化物半导体器件)传感器和集成电路,开发了一种比传统相机快1000 倍的脉冲相机.将视象看作生物视觉中的脉冲序列,进一步开发了基于脉冲神经网络的机器视觉系统,它可以将机器的速度和生物视觉的机理结合起来,从而实现了比人类视觉快1000 倍的高速目标检测和跟踪,并通过辅助裁判和目标瞄准系统证明了脉冲相机和超级视觉系统的效用.视象模型和芯片有望从根本上改变图像和视频的概念以及摄影,电影和视觉媒体等相关行业,并开启一个全新的基于脉冲神经网络的速度自由的机器视觉时代.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Capture the moment: High-speed imaging with spiking cameras through short-term plasticity</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10019594/" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+High-speed imaging can help us understand some phenomena that are too fast to be captured by our eyes. Although ultra-fast frame-based cameras (e.g., Phantom) can record millions of fps at reduced resolution, they are too expensive to be widely used. Recently, a retina-inspired vision sensor, spiking camera, has been developed to record external information at 40, 000 Hz. The spiking camera uses the asynchronous binary spike streams to represent visual information. Despite this, how to reconstruct dynamic scenes from asynchronous spikes remains challenging. In this paper, we introduce novel high-speed image reconstruction models based on the short-term plasticity (STP) mechanism of the brain, termed TFSTP and TFMDSTP. We first derive the relationship between states of STP and spike patterns. Then, in TFSTP, by setting up the STP model at each pixel, the scene radiance can be inferred by the …
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Training neural networks without backpropagation: A deeper dive into the likelihood ratio method</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://www.researchgate.net/profile/Yijie-Peng/publication/370806475_Training_Neural_Networks_without_Backpropagation_A_Deeper_Dive_into_the_Likelihood_Ratio_Method/links/646421a3db66756cda6be366/Training-Neural-Networks-without-Backpropagation-A-Deeper-Dive-into-the-Likelihood-Ratio-Method.pdf" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Backpropagation (BP) is the most important gradient estimation method for training neural networks in deep learning. However, the literature shows that neural networks trained by BP are vulnerable to adversarial attacks. We develop the likelihood ratio (LR) method, a new gradient estimation method, for training a broad range of neural network architectures, including convolutional neural networks, recurrent neural networks, graph neural networks, and spiking neural networks, without recursive gradient computation. We propose three methods to efficiently reduce the variance of the gradient estimation in the neural network training process. Our experiments yield numerical results for training different neural networks on several datasets. All results demonstrate that the LR method is effective for training various neural networks and significantly improves the robustness of the neural networks under adversarial attacks relative to the BP method.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Rate gradient approximation attack threats deep spiking neural networks</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2023/html/Bu_Rate_Gradient_Approximation_Attack_Threats_Deep_Spiking_Neural_Networks_CVPR_2023_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Spiking Neural Networks (SNNs) have attracted significant attention due to their energy-efficient properties and potential application on neuromorphic hardware. State-of-the-art SNNs are typically composed of simple Leaky Integrate-and-Fire (LIF) neurons and have become comparable to ANNs in image classification tasks on large-scale datasets. However, the robustness of these deep SNNs has not yet been fully uncovered. In this paper, we first experimentally observe that layers in these SNNs mostly communicate by rate coding. Based on this rate coding property, we develop a novel rate coding SNN-specified attack method, Rate Gradient Approximation Attack (RGA). We generalize the RGA attack to SNNs composed of LIF neurons with different leaky parameters and input encoding by designing surrogate gradients. In addition, we develop the time-extended enhancement to generate more effective adversarial examples. The experiment results indicate that our proposed RGA attack is more effective than the previous attack and is less sensitive to neuron hyperparameters. We also conclude from the experiment that rate-coded SNN composed of LIF neurons is not secure, which calls for exploring training methods for SNNs composed of complex neurons and other neuronal codings. Code is available at https://github. com/putshua/SNN_attack_RGA
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Complementary intrinsics from neural radiance fields and cnns for outdoor scene relighting</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="http://openaccess.thecvf.com/content/CVPR2023/html/Yang_Complementary_Intrinsics_From_Neural_Radiance_Fields_and_CNNs_for_Outdoor_CVPR_2023_paper.html" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Relighting an outdoor scene is challenging due to the diverse illuminations and salient cast shadows. Intrinsic image decomposition on outdoor photo collections could partly solve this problem by weakly supervised labels with albedo and normal consistency from multi-view stereo. With neural radiance fields (NeRFs), editing the appearance code could produce more realistic results without explicitly interpreting the outdoor scene image formation. This paper proposes to complement the intrinsic estimation from volume rendering using NeRFs and from inversing the photometric image formation model using convolutional neural networks (CNNs). The former produces richer and more reliable pseudo labels (cast shadows and sky appearances in addition to albedo and normal) for training the latter to predict interpretable and editable lighting parameters via a single-image prediction pipeline. We demonstrate the advantages of our method for both intrinsic image decomposition and relighting for various real outdoor scenes.
+</p>
+
+</div>
+
+<div class="paper-card">
+
+<h3 class="paper-title">Exploring asymmetric tunable blind-spots for self-supervised denoising in real-world scenarios</h3>
+
+<div class="paper-meta">📄 2023</div>
+
+<a class="paper-link" href="https://scholar.google.com/scholar?cluster=7981888362564073774&hl=en&oi=scholarr" target="_blank">🔗 Read Paper</a>
+
+<p class="paper-abstract">
+Abstract unavailable. This publication does not provide a summary using scholarly.
+</p>
+
+</div>
+</details>
+
